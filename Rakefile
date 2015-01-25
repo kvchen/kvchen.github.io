@@ -16,8 +16,6 @@ end
 
 desc "Serve site locally"
 task :serve do
-  config_files << "_config/_local.yml"
-  puts config_files
   config = config_files.join(",")
   puts("Generating static site into #{deploy_dir}")
   build_status = system("bundle exec jekyll serve --no-watch --config #{config} --destination #{deploy_dir}")
