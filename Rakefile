@@ -6,7 +6,6 @@ config_files = ["_config/_config.yml", "_config/_content.yml"]
 
 desc "Build site"
 task :build do
-  config_files << "_config/_production.yml"
   config = config_files.join(",")
   puts("Generating static site into #{deploy_dir}")
   build_status = system("bundle exec jekyll build --config #{config} --destination #{deploy_dir}")
@@ -16,6 +15,7 @@ end
 
 desc "Serve site locally"
 task :serve do
+  config_files << "_config/_local.yml"
   config = config_files.join(",")
   puts("Generating static site into #{deploy_dir}")
   build_status = system("bundle exec jekyll serve --no-watch --config #{config} --destination #{deploy_dir}")
