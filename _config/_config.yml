@@ -1,16 +1,13 @@
 title:            keff.me
 description:      a coding blog
-#url:              http://localhost:4000
 url:              http://keff.me
-search:           false
-
 permalink: /:year/:month/:day/:title/
 relative_permalinks: false
 
 # Owner/author information
 owner:
   name:           Kevin Chen
-  email:          keffcat@gmail.com
+  email:          kvchen@berkeley.edu
 social:
   github:         https://github.com/kvchen
   facebook:       https://www.facebook.com/nuclearsalad

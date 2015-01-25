@@ -2,21 +2,25 @@
 
 deploy_dir = "_site"
 deploy_branch = "gh-pages"
-config_files = Dir.glob("_config/*.yml").join(",")
-
+config_files = ["_config/_config.yml", "_config/_content.yml"]
 
 desc "Build site"
 task :build do
+  config_files << "_config/_production.yml"
+  config = config_files.join(",")
   puts("Generating static site into #{deploy_dir}")
-  build_status = system("bundle exec jekyll build --config #{config_files} --destination #{deploy_dir}")
+  build_status = system("bundle exec jekyll build --config #{config} --destination #{deploy_dir}")
   asset_status = system("touch #{deploy_dir}/.nojekyll")
   puts (build_status and asset_status) ? "Success" : "Failed"
 end
 
 desc "Serve site locally"
 task :serve do
+  config_files << "_config/_local.yml"
+  puts config_files
+  config = config_files.join(",")
   puts("Generating static site into #{deploy_dir}")
-  build_status = system("bundle exec jekyll serve --no-watch --config #{config_files} --destination #{deploy_dir}")
+  build_status = system("bundle exec jekyll serve --no-watch --config #{config} --destination #{deploy_dir}")
   asset_status = system("touch #{deploy_dir}/.nojekyll")
   puts (build_status and asset_status) ? "Success" : "Failed"
 end
