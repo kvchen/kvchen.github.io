@@ -1,82 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://keff.me</loc>
+        <loc>http://localhost:4000</loc>
     </url>
     
     
     <url>
-        <loc>http://keff.me/index.html</loc>
+        <loc>http://localhost:4000/index.html</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/sitemap.xml</loc>
+        <loc>http://localhost:4000/sitemap.xml</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/cs61a/index.html</loc>
+        <loc>http://localhost:4000/cs61a/index.html</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/cs61a/linked-lists/slicing-linked-lists.html</loc>
+        <loc>http://localhost:4000/cs61a/linked-lists/slicing-linked-lists.html</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/cs61a/recursion/slicing-linked-lists.html</loc>
+        <loc>http://localhost:4000/cs61a/recursion/slicing-linked-lists.html</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/interview/random_weights.html</loc>
+        <loc>http://localhost:4000/interview/random_weights.html</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/interview/word_matrix.html</loc>
+        <loc>http://localhost:4000/interview/word_matrix.html</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/projects/</loc>
+        <loc>http://localhost:4000/projects/</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/resources/</loc>
+        <loc>http://localhost:4000/resources/</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/cs61a/basics/</loc>
+        <loc>http://localhost:4000/cs61a/basics/</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/cs61a/functions/</loc>
+        <loc>http://localhost:4000/cs61a/functions/</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/cs61a/environment-diagrams/</loc>
+        <loc>http://localhost:4000/cs61a/environment-diagrams/</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/cs61a/higher-order-functions/</loc>
+        <loc>http://localhost:4000/cs61a/higher-order-functions/</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/cs61a/recursion/</loc>
+        <loc>http://localhost:4000/cs61a/recursion/</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/cs61a/tree-recursion/</loc>
+        <loc>http://localhost:4000/cs61a/tree-recursion/</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/cs61a/scheme/</loc>
+        <loc>http://localhost:4000/cs61a/scheme/</loc>
     </url>
     
     <url>
-        <loc>http://keff.me/cs61a/sql/</loc>
+        <loc>http://localhost:4000/cs61a/sql/</loc>
     </url>
     
 
     
     <url>
-        <loc>http://keff.me/2014/09/28/a_thought_a_day/</loc>
+        <loc>http://localhost:4000/2014/09/28/a_thought_a_day/</loc>
     </url>
     
 </urlset>
