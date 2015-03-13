@@ -13,4 +13,4 @@ layout: topic
 
 # Discussion Attendance
 
-* [Discussion 7 (Section 29)](https://docs.google.com/a/berkeley.edu/forms/d/1tL3V-KyvkZeCP74jTvjuXohfcsHhfUDgcNLANUjBpus/viewform?usp=send_form)
+* [Discussion 7 (Section 32)](https://docs.google.com/a/berkeley.edu/forms/d/1XoJg___B1J-RQPMlQWcePbi-kBkpI57k0TGKsnnMwCE/viewform?usp=send_form)
