@@ -6,6 +6,10 @@
     
     
     <url>
+        <loc>http://keff.me/feed.xml</loc>
+    </url>
+    
+    <url>
         <loc>http://keff.me/index.html</loc>
     </url>
     
@@ -42,9 +46,5 @@
     </url>
     
 
-    
-    <url>
-        <loc>http://keff.me/2014/09/28/a_thought_a_day/</loc>
-    </url>
     
 </urlset>
