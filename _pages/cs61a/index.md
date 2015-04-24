@@ -11,6 +11,4 @@ layout: topic
     * Tuesday, 3-5PM
     * Thursday, 3-4PM
 
-# Discussion Attendance
 
-* [Discussion 7 (Section 32)](https://docs.google.com/a/berkeley.edu/forms/d/1XoJg___B1J-RQPMlQWcePbi-kBkpI57k0TGKsnnMwCE/viewform?usp=send_form)
