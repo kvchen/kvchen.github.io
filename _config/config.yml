@@ -1,7 +1,7 @@
-title:            keff.me
-description:      a coding blog
-url:              http://keff.me
-permalink: /:year/:month/:day/:title/
+title:               keff.me
+description:         a coding blog
+url:                 http://keff.me
+permalink:           /:year/:month/:day/:title/
 relative_permalinks: false
 
 # Owner/author information
