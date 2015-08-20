@@ -4,62 +4,90 @@ deploy_dir = "_site"
 deploy_branch = "gh-pages"
 config_files = ["_config/_config.yml", "_config/_content.yml"]
 
-desc "Build site"
-task :build do
-  config = config_files.join(",")
-  puts("Generating static site into #{deploy_dir}")
-  build_status = system("bundle exec jekyll build --config #{config} --destination #{deploy_dir}")
-  asset_status = system("touch #{deploy_dir}/.nojekyll")
-  puts (build_status and asset_status) ? "Success" : "Failed"
+
+DEPLOY_DIR = '_site'
+SOURCE_BRANCH = 'source'
+DEPLOY_BRANCH = 'master'
+
+CONFIG_DIR = '_config'
+CONFIG_FILES = {
+  :test => ['config.yml', 'content.yml', 'local.yml'],
+  :prod => ['config.yml', 'content.yml']
+}
+
+
+# Helper methods
+
+def colorize(text, color_code)
+  "\e[#{ color_code }m#{ text }\e[0m"
 end
 
-desc "Serve site locally"
+def red(text); colorize(text, 31); end
+def green(text); colorize(text, 32); end
+def blue(text); colorize(text, 34); end
+
+def set_config()
+  
+end
+
+
+def abort_on_failure(cmd)
+  if not system(cmd)
+    puts red("`#{ cmd }` failed with exit code #{ $?.exitstatus }!")
+    exit(1)
+  end
+end
+
+
+# Tasks
+
+desc 'Sets config variables according to the environment'
+task :set_config do
+  CONFIG_ARGS = CONFIG_FILES[RAKE_ENV].collect { |f| File.join(CONFIG_DIR, f) }.join(',')
+end
+
+
+desc 'Compiles the site from source files'
+task :compile do
+  abort_on_failure("jekyll build --config #{ CONFIG_ARGS } --destination #{ DEPLOY_DIR }")
+  abort_on_failure("touch #{ File.join(DEPLOY_DIR, '.nojekyll') }")
+end
+
+
+desc 'Serve site locally'
 task :serve do
-  config_files << "_config/_local.yml"
-  config = config_files.join(",")
-  puts("Generating static site into #{deploy_dir}")
-  build_status = system("bundle exec jekyll serve --no-watch --config #{config} --destination #{deploy_dir}")
-  asset_status = system("touch #{deploy_dir}/.nojekyll")
-  puts (build_status and asset_status) ? "Success" : "Failed"
+  begin
+    system("jekyll serve --config #{ CONFIG_ARGS } --destination #{ DEPLOY_DIR }")
+  rescue Interrupt => e
+
+  end
 end
 
-desc "Commit local files"
-task :commit do
-  puts "\n## Staging modified files"
-  status = system("git add -A")
-  puts status ? "Success" : "Failed"
-  puts "\n## Committing a site build at #{Time.now.utc}"
-  message = "Updated site at #{Time.now.utc}"
-  status = system("git commit -m \"#{message}\"")
-  puts status ? "Success" : "Failed"
-  puts "\n## Pushing commits to remote"
-  status = system("git push origin source")
-  puts status ? "Success" : "Failed"
+
+desc 'Push local files to Github pages'
+task :push do
+  abort_on_failure("git branch -D #{ DEPLOY_BRANCH }")
+  abort_on_failure("git checkout -b #{ DEPLOY_BRANCH }")
+  abort_on_failure("git filter-branch --subdirectory-filter #{ DEPLOY_DIR }/ -f")
+  abort_on_failure("git push origin #{ DEPLOY_BRANCH }")
+  abort_on_failure("git checkout #{ SOURCE_BRANCH }")
 end
 
-desc "Deploy local files to Github Pages"
+
+desc 'Compile and deploy to Github pages'
 task :deploy do
-  puts "\n## Deleting master branch"
-  status = system("git branch -D master")
-  puts status ? "Success" : "Failed"
-  puts "\n## Creating new master branch and switching to it"
-  status = system("git checkout -b master")
-  puts status ? "Success" : "Failed"
-  puts "\n## Forcing #{deploy_dir} subdirectory to be project root"
-  status = system("git filter-branch --subdirectory-filter #{deploy_dir}/ -f")
-  puts status ? "Success" : "Failed"
-  puts "\n## Switching back to source branch"
-  status = system("git checkout source")
-  puts status ? "Success" : "Failed"
-  puts "\n## Pushing all branches to origin"
-  status = system("git push --all origin")
-  puts status ? "Success" : "Failed"
+  RAKE_ENV = :prod
+  
+  Rake::Task['set_config'].invoke
+  Rake::Task['compile'].invoke
+  Rake::Task['push'].invoke
 end
 
-desc "Commit and deploy local files"
-task :commit_deploy => [:commit, :deploy] do
-end
 
-desc "Default task"
-task :default => [:build, :commit_deploy] do
+desc 'Compile and test locally'
+task :default do
+  RAKE_ENV = :test
+
+  Rake::Task['set_config'].invoke
+  Rake::Task['serve'].invoke
 end
