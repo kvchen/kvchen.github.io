@@ -47,13 +47,6 @@ task :set_config do
 end
 
 
-desc 'Compiles the site from source files'
-task :compile do
-  abort_on_failure("jekyll build --config #{ CONFIG_ARGS } --destination #{ DEPLOY_DIR }")
-  abort_on_failure("touch #{ File.join(DEPLOY_DIR, '.nojekyll') }")
-end
-
-
 desc 'Serve site locally'
 task :serve do
   begin
@@ -64,10 +57,18 @@ task :serve do
 end
 
 
-desc 'Push local files to Github pages'
+desc 'Push compiled site files to Github pages'
 task :push do
-  abort_on_failure("git branch -D #{ DEPLOY_BRANCH }")
+  system("git branch -D #{ DEPLOY_BRANCH }")
   abort_on_failure("git checkout -b #{ DEPLOY_BRANCH }")
+
+  abort_on_failure("jekyll build --config #{ CONFIG_ARGS } --destination #{ DEPLOY_DIR }")
+  abort_on_failure("touch #{ File.join(DEPLOY_DIR, '.nojekyll') }")
+
+  message = "Site updated at #{ Time.now.utc }"
+  abort_on_failure('git add -A')
+  abort_on_failure("git commit -m \"#{ message }\"")
+
   abort_on_failure("git filter-branch --subdirectory-filter #{ DEPLOY_DIR }/ -f")
   abort_on_failure("git push origin #{ DEPLOY_BRANCH }")
   abort_on_failure("git checkout #{ SOURCE_BRANCH }")
@@ -79,7 +80,6 @@ task :deploy do
   RAKE_ENV = :prod
   
   Rake::Task['set_config'].invoke
-  Rake::Task['compile'].invoke
   Rake::Task['push'].invoke
 end
 
