@@ -70,7 +70,7 @@ task :push do
   abort_on_failure("git commit -m \"#{ message }\"")
 
   abort_on_failure("git filter-branch --subdirectory-filter #{ DEPLOY_DIR }/ -f")
-  abort_on_failure("git push origin #{ DEPLOY_BRANCH }")
+  abort_on_failure("git push origin #{ DEPLOY_BRANCH } --force")
   abort_on_failure("git checkout #{ SOURCE_BRANCH }")
 end
 
