@@ -1,10 +1,5 @@
 # coding: utf-8
 
-deploy_dir = "_site"
-deploy_branch = "gh-pages"
-config_files = ["_config/_config.yml", "_config/_content.yml"]
-
-
 DEPLOY_DIR = '_site'
 SOURCE_BRANCH = 'source'
 DEPLOY_BRANCH = 'master'
@@ -30,7 +25,7 @@ def blue(text); colorize(text, 34); end
 def run_command(cmd, abort_on_failure=true)
   puts blue(cmd)
   success = system(cmd)
-  
+
   if not success and abort_on_failure
     puts red("`#{ cmd }` failed with exit code #{ $?.exitstatus }!")
     exit(1)
@@ -50,7 +45,7 @@ desc 'Serve site locally'
 task :serve do
   begin
     run_command("jekyll serve --config #{ CONFIG_ARGS } --destination #{ DEPLOY_DIR }", false)
-  rescue Interrupt => e
+  rescue Interrupt
   end
 end
 
@@ -76,7 +71,7 @@ end
 desc 'Compile and deploy to Github pages'
 task :deploy do
   RAKE_ENV = :prod
-  
+
   Rake::Task['set_config'].invoke
   Rake::Task['push'].invoke
 end
