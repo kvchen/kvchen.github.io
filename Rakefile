@@ -26,13 +26,12 @@ def red(text); colorize(text, 31); end
 def green(text); colorize(text, 32); end
 def blue(text); colorize(text, 34); end
 
-def set_config()
+
+def run_command(cmd, abort_on_failure=true)
+  puts blue(cmd)
+  success = system(cmd)
   
-end
-
-
-def abort_on_failure(cmd)
-  if not system(cmd)
+  if not success and abort_on_failure
     puts red("`#{ cmd }` failed with exit code #{ $?.exitstatus }!")
     exit(1)
   end
@@ -50,28 +49,27 @@ end
 desc 'Serve site locally'
 task :serve do
   begin
-    system("jekyll serve --config #{ CONFIG_ARGS } --destination #{ DEPLOY_DIR }")
+    run_command("jekyll serve --config #{ CONFIG_ARGS } --destination #{ DEPLOY_DIR }", false)
   rescue Interrupt => e
-
   end
 end
 
 
 desc 'Push compiled site files to Github pages'
 task :push do
-  system("git branch -D #{ DEPLOY_BRANCH }")
-  abort_on_failure("git checkout -b #{ DEPLOY_BRANCH }")
+  run_command("git branch -D #{ DEPLOY_BRANCH }", false)
+  run_command("git checkout -b #{ DEPLOY_BRANCH }")
 
-  abort_on_failure("jekyll build --config #{ CONFIG_ARGS } --destination #{ DEPLOY_DIR }")
-  abort_on_failure("touch #{ File.join(DEPLOY_DIR, '.nojekyll') }")
+  run_command("jekyll build --config #{ CONFIG_ARGS } --destination #{ DEPLOY_DIR }")
+  run_command("touch #{ File.join(DEPLOY_DIR, '.nojekyll') }")
 
   message = "Site updated at #{ Time.now.utc }"
-  abort_on_failure('git add -A')
-  abort_on_failure("git commit -m \"#{ message }\"")
+  run_command('git add -A')
+  run_command("git commit -m \"#{ message }\"")
 
-  abort_on_failure("git filter-branch --subdirectory-filter #{ DEPLOY_DIR }/ -f")
-  abort_on_failure("git push origin #{ DEPLOY_BRANCH } --force")
-  abort_on_failure("git checkout #{ SOURCE_BRANCH }")
+  run_command("git filter-branch --subdirectory-filter #{ DEPLOY_DIR }/ -f")
+  run_command("git push origin #{ DEPLOY_BRANCH } --force")
+  run_command("git checkout #{ SOURCE_BRANCH }")
 end
 
 
