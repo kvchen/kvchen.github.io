@@ -1,5 +1,6 @@
 # coding: utf-8
 
+BASE_DIR = File.dirname(__FILE__)
 DEPLOY_DIR = '_site'
 SOURCE_BRANCH = 'source'
 DEPLOY_BRANCH = 'master'
@@ -55,6 +56,7 @@ task :push do
   run_command("git branch -D #{ DEPLOY_BRANCH }", false)
   run_command("git checkout -b #{ DEPLOY_BRANCH }")
 
+  run_command("rm -rf #{ File.join(BASE_DIR, DEPLOY_DIR) }")
   run_command("jekyll build --config #{ CONFIG_ARGS } --destination #{ DEPLOY_DIR }")
   run_command("touch #{ File.join(DEPLOY_DIR, '.nojekyll') }")
 
