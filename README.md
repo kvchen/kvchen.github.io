@@ -10,5 +10,4 @@ My personal website [keff.me](http://keff.me) is built using the files hosted in
 
 1. Clone the repository
 2. Run `bundle install` to install required gems
-3. Change the `url` setting in `_config/_config.yml` to point to the correct deployment location
-4. Run `rake serve` to run a local server, or `rake` to build and deploy to Github pages. 
+3. Run `rake` to test the site locally, and `rake deploy` to push it to production!
