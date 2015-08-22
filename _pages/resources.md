@@ -3,7 +3,7 @@ title: Resources
 description: helpful stuff
 slug: resources
 
-layout: topic
+layout: resource
 permalink: /resources/
 
 items:

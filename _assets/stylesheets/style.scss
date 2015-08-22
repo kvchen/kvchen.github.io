@@ -267,6 +267,7 @@ table {
 .page-title { margin: 15px 40px; }
 
 .post-date,
+.post-description,
 .blog-description {
     color: #AEADAD;
     font-size: 14px;
@@ -400,6 +401,12 @@ table {
     display: inline-block;
     margin: 0;
     text-transform: none;
+}
+
+.post-stub-description {
+    display: inline-block;
+
+    &:before { content: "/ "; }
 }
 
 .post-stub-date {

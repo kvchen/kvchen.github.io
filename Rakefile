@@ -6,8 +6,8 @@ DEPLOY_BRANCH = 'master'
 
 CONFIG_DIR = '_config'
 CONFIG_FILES = {
-  :test => ['config.yml', 'content.yml', 'local.yml'],
-  :prod => ['config.yml', 'content.yml']
+  :test => ['base.yml', 'content.yml', 'local.yml'],
+  :prod => ['base.yml', 'content.yml']
 }
 
 
