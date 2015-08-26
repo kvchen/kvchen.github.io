@@ -6,8 +6,16 @@ slug: cs61a
 layout: resource
 ---
 
-# Logistics
+# Info
 
 * **Course Website**: [http://cs61a.org](http://cs61a.org)
-* **Email**: TBD
-* **Office Hours**: TBD
+* **Section Times**:
+  * **35**: WF 11 AM - 12:30 PM
+  * **39**: WF 12:30 PM - 2 PM
+* **Office Hours**: M 1-2, W 5-6
+
+
+# Contact
+
+* **Email**: [kvchen@berkeley.edu](mailto:kvchen@berkeley.edu)
+* **Anonymous Feedback**: [http://goo.gl/forms/fUieXB6oHv](http://goo.gl/forms/fUieXB6oHv)

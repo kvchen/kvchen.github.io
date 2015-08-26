@@ -8,10 +8,11 @@ $ ->
   enableClickHandlers()
 
 
-enableClickHandlers = () ->
+enableClickHandlers = ->
   $('.js-jump-top').on 'click', (e) ->
     e.preventDefault()
-    $('html, body').animate {'scrollTop': 0}
+    $('html, body').animate
+      'scrollTop': 0
 
   $('.hint-toggle').on 'click', (e) ->
     e.preventDefault()
@@ -22,9 +23,7 @@ enableClickHandlers = () ->
     $(".solution").slideToggle 'medium'
 
 
-disableClickHandlers = () ->
+disableClickHandlers = ->
   $('.hint-toggle').off 'click'
   $('.solution-toggle').off 'click'
   $('.js-jump-top').off 'click'
-
-
