@@ -10,9 +10,9 @@ layout: resource
 
 * **Course Website**: [http://cs61a.org](http://cs61a.org)
 * **Section Times**:
-  * **35**: WF 11 AM - 12:30 PM
-  * **39**: WF 12:30 PM - 2 PM
-* **Office Hours**: M 1-2, W 5-6
+  * **35**: WF 11 AM - 12:30 PM (Lab: 271 Soda, Discussion: 310 Soda)
+  * **39**: WF 12:30 PM - 2 PM (Lab: 273 Soda, Discussion: 320 Soda)
+* **Office Hours**: M 1 PM - 2 PM, W 5 PM - 6 PM
 
 
 # Contact
