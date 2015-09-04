@@ -7,7 +7,9 @@ layout: default
         <header class="post-header">
             <h1 class="post-title">{{ page.title }}</h1>
 
+            {% if page.date %}
             <p class="post-date"><time>Published {{ page.date | date: "%B %d, %Y" }}</time></p>
+            {% endif %}
         </header>
 
         <div class="post-content clearfix">
@@ -16,9 +18,10 @@ layout: default
 
         <footer class="post-footer clearfix">
             {% if page.tags %}
-                <p class="post-tags"><span>Tags:</span> {{ page.tags | array_to_sentence_string }} </p>
+            <p class="post-tags"><span>Tags:</span> {{ page.tags | array_to_sentence_string }} </p>
             {% endif %}
 
+            {% if page.share %}
             <div class="share">
                 <a class="icon-twitter" href="http://twitter.com/share?text={{ page.title}}&url={{ site.url }}{{ page.url }}"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
@@ -38,6 +41,7 @@ layout: default
                     <span class="hidden">Google+</span>
                 </a>
             </div>
+            {% endif %}
         </footer>
     </article>
 
