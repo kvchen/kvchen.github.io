@@ -4,6 +4,11 @@ description: The Structure and Interpretation of Computer Programs
 slug: cs61a
 
 layout: resource
+
+items:
+  - title: In-Class Quizzes
+    description: Extra Discussion Questions
+    url: /cs61a/quiz/
 ---
 
 # Info
@@ -19,3 +24,6 @@ layout: resource
 
 * **Email**: [kvchen@berkeley.edu](mailto:kvchen@berkeley.edu)
 * **Anonymous Feedback**: [http://goo.gl/forms/fUieXB6oHv](http://goo.gl/forms/fUieXB6oHv)
+
+
+# Resources
