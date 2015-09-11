@@ -5,10 +5,6 @@ layout: post
 tags: []
 ---
 
-**Please write your name and BCourses email at the top of your quiz and hand
-it in when you're done!**
-
-
 1. Are these primitive expressions or call expressions?
   * `3`
   * `add(2, 3)`
