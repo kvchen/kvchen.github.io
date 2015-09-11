@@ -8,11 +8,12 @@ tags: []
 [Section 135 Attendance](http://goo.gl/forms/KNfI88V8Ua) · [Section 139 Attendance](http://goo.gl/forms/YmbH7LVM9V)
 
 
-1. Fill in the blanks to get the expected output.
+1. Fill in the blanks (without using any numbers in the first blank!) to get
+   the expected output.
 
     ```python3
 
-    >>> (lambda x: lambda y: ________)(___)(lambda x: z*z)()
+    >>> (lambda x: lambda y: ________)(___)(lambda z: z*z)()
     9
 
     ```
