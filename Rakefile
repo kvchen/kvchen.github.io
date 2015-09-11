@@ -62,9 +62,9 @@ task :push do
   message = "Site updated at #{ Time.now.utc }"
   run_command('git add -A')
   run_command("git commit -m \"#{ message }\"")
-  
+
   # Avoid race conditions with this one simple trick!
-  run_command('sleep 2')
+  run_command('sleep 5')
 
   run_command("git filter-branch --subdirectory-filter #{ DEPLOY_DIR }/ -f")
   run_command("git push origin #{ DEPLOY_BRANCH } --force")
