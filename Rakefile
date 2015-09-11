@@ -68,6 +68,8 @@ task :push do
 
   run_command("git filter-branch --subdirectory-filter #{ DEPLOY_DIR }/ -f")
   run_command("git push origin #{ DEPLOY_BRANCH } --force")
+
+  run_command("rm -rf #{ DEPLOY_DIR }")
   run_command("git checkout #{ SOURCE_BRANCH }")
 end
 
