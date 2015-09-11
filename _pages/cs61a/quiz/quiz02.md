@@ -5,6 +5,9 @@ layout: post
 tags: []
 ---
 
+[Section 135 Attendance](http://goo.gl/forms/KNfI88V8Ua) · [Section 139 Attendance](http://goo.gl/forms/YmbH7LVM9V)
+
+
 1. Fill in the blanks to get the expected output.
 
     ```python3
