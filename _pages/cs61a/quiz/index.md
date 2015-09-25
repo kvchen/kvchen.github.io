@@ -12,4 +12,7 @@ items:
   - title: Quiz 2
     description: Environment Diagrams and Recursion
     url: /cs61a/quiz/quiz02.html
+  - title: Quiz 3
+    description: Trees and Sequences
+    url: /cs61a/quiz/quiz03.html
 ---
