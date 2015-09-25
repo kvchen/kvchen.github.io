@@ -29,3 +29,16 @@ layout: post
     for func in lst:
         print(func())
     ```
+
+3. Implement a function `addup` that takes in a `lst` of numbers and a target value `n`. It should return `True` if some subset of `lst` adds up to `n`. Numbers in `lst` may not be reused. For example:
+
+    ```python3
+    >>> addup([3, 4, 5], 9)
+    True # 4 + 5 = 9
+    >>> addup([3, 9, 27, 81], 3)
+    True # 3 = 3
+    >>> addup([3, 9, 27, 81], 33)
+    False
+    ```
+
+    **Followup**: What needs to be changed if values in `lst` can be reused?
