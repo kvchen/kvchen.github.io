@@ -5,8 +5,32 @@ layout: post
 
 [Attendance Form](http://goo.gl/forms/3okNT4spS4)
 
-1. Implement a function `running_total` that mutates a list of numbers such
-that the $i$th element is the sum of the first $i+1$ elements.
+1. Complete the implementation of `print_by_level`, which takes in a tree and
+   prints each "level" of the tree in sequential order, as a series of lists. A
+   level of a tree is defined as all the elements at the same depth from the
+   root. Assume that you can use `branches(tree)` and `root(tree)`.
+
+    ```python3
+    def print_by_level(t):
+        """Prints each level of the tree as a list.
+
+        >>> t = tree(1,[tree(3,[tree(2),tree(4)]),tree(6,[tree(5),tree(7)])])
+        >>> print_by_level(t)
+        [1]
+        [3, 6]
+        [2, 4, 5, 7]
+        """
+        lst, next, curr = [t], [], []
+        while lst:
+            for t in lst:
+                ________________________
+                curr.append(________________________)
+            print(curr)
+            lst, nxt, curr = ________________________
+    ```
+
+2. Implement a function `running_total` that mutates a list of numbers such
+   that the $i$th element is the sum of the first $i+1$ elements.
 
     ```python3
     def running_total(lst):
@@ -19,7 +43,7 @@ that the $i$th element is the sum of the first $i+1$ elements.
         return
     ```
 
-2. Draw the environment diagram.
+3. Draw the environment diagram.
 
     ```python3
     def world(series):
