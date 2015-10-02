@@ -14,7 +14,7 @@ layout: post
     def print_by_level(t):
         """Prints each level of the tree as a list.
 
-        >>> t = tree(1,[tree(3,[tree(2),tree(4)]),tree(6,[tree(5),tree(7)])])
+        >>> t = tree(1, [tree(3, [tree(2), tree(4)]), tree(6, [tree(5), tree(7)])])
         >>> print_by_level(t)
         [1]
         [3, 6]
