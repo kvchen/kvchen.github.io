@@ -20,13 +20,13 @@ layout: post
         [3, 6]
         [2, 4, 5, 7]
         """
-        lst, next, curr = [t], [], []
-        while lst:
-            for t in lst:
-                ________________________
-                curr.append(________________________)
-            print(curr)
-            lst, nxt, curr = ________________________
+        expand_next, next_level, curr_level = [t], [], []
+        while expand_next:
+            for t in expand_next:
+                ____________________
+                curr_level.append(_________________)
+            print(curr_level)
+            expand_next, next_level, curr_level = ____________________
     ```
 
 2. Implement a function `running_total` that mutates a list of numbers such
