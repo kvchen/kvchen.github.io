@@ -35,9 +35,9 @@ layout: post
     ```python3
     def running_total(lst):
         """Computes a running total over a list of numbers.
-        >>> l = [1, 2, 3]
-        >>> running_total(l)  # mutates the original list, returns None
-        >>> l  # [1, 1+2, 1+2+3]
+        >>> lst = [1, 2, 3]
+        >>> running_total(lst)  # mutates the original list, returns None
+        >>> lst  # [1, 1+2, 1+2+3]
         [1, 3, 6]
         """
         return
