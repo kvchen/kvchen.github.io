@@ -15,4 +15,7 @@ items:
   - title: Quiz 3
     description: Trees and Sequences
     url: /cs61a/quiz/quiz03.html
+  - title: Quiz 4
+    description: Dictionaries and Mutation
+    url: /cs61a/quiz/quiz04.html
 ---
