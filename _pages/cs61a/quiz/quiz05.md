@@ -13,7 +13,7 @@ to the beginning.
     class LoopList(object):
         """
         >>> x = LoopList([3, 1, 4])
-        >>> [x.at_index(i) for i in range(9)]  # loops around!
+        >>> [x.at_index(i) for i in range(10)]  # loops around!
         [3, 1, 4, 3, 1, 4, 3, 1, 4, 3]
         """
         "YOUR CODE HERE"
