@@ -18,4 +18,7 @@ items:
   - title: Quiz 4
     description: Dictionaries and Mutation
     url: /cs61a/quiz/quiz04.html
+  - title: Quiz 5
+    description: Inheritance
+    url: /cs61a/quiz/quiz05.html
 ---
