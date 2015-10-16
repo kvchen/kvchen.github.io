@@ -1,8 +1,6 @@
 ---
 title: Discussion 1 Quiz
 layout: post
-
-tags: []
 ---
 
 1. Are these primitive expressions or call expressions?

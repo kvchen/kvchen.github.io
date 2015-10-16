@@ -1,5 +1,5 @@
 ---
-title: Discussion 5 Quiz
+title: Discussion 6 Quiz
 layout: post
 ---
 
