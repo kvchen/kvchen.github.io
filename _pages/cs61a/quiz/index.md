@@ -21,4 +21,7 @@ items:
   - title: Quiz 5
     description: Inheritance
     url: /cs61a/quiz/quiz05.html
+  - title: Quiz 6
+    description: Orders of Growth and Trees
+    url: /cs61a/quiz/quiz06.html
 ---
