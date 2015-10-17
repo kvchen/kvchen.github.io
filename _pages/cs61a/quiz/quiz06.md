@@ -3,7 +3,7 @@ title: Discussion 6 Quiz
 layout: post
 ---
 
-[Attendance Form](http://goo.gl/forms/CnzpFkGtkq)
+[Solutions](/cs61a/quiz/solutions/quiz06.html)
 
 1. Draw the box-and-pointer diagram for the linked list `link` after the following code is executed.
 

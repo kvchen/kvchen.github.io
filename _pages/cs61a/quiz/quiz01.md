@@ -3,6 +3,8 @@ title: Discussion 1 Quiz
 layout: post
 ---
 
+[Solutions](/cs61a/quiz/solutions/quiz01.html)
+
 1. Are these primitive expressions or call expressions?
   * `3`
   * `add(2, 3)`

@@ -1,15 +1,13 @@
 ---
-title: Discussion 2 Quiz
+title: Discussion 2 Quiz Solutions
 layout: post
 ---
-
-[Solutions](/cs61a/quiz/solutions/quiz02.html)
 
 1. Fill in the blanks (without using any numbers in the first blank!) to get
    the expected output.
 
     ```python3
-    >>> (lambda x: lambda y: ________)(___)(lambda z: z*z)()
+    >>> (lambda x: lambda y: lambda: y(x))(3)(lambda z: z*z)()
     9
     ```
 
@@ -27,6 +25,8 @@ layout: post
 
     dread(lambda spot: x + spot)
     ```
+
+    [Environment Diagram](http://goo.gl/dvKztg)
 
 3. Suppose we've already entered the following code into the Python interpreter:
 
@@ -61,10 +61,27 @@ layout: post
 
     ```python3
     >>> pig(3)
+    oink
+    oink
+    162
 
     >>> y = hog(7)
+    oink
+    squeal
+    squeal
+    squeal
+    oink
+    oink
 
     >>> hog(swine(hog))
+    squeal
+    squeal
+    oink
+    oink
+    Error
 
     >>> swine(pig)
+    squeal
+    squeal
+    34
     ```

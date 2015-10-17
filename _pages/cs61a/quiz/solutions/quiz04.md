@@ -1,9 +1,7 @@
 ---
-title: Discussion 4 Quiz
+title: Discussion 4 Quiz Solutions
 layout: post
 ---
-
-[Solutions](/cs61a/quiz/solutions/quiz04.html)
 
 1. Complete the implementation of `print_by_level`, which takes in a tree and
    prints each "level" of the tree in sequential order, as a series of lists. A
@@ -23,10 +21,10 @@ layout: post
         expand_next, next_level, curr_level = [t], [], []
         while expand_next:
             for t in expand_next:
-                ____________________
-                curr_level.append(_________________)
+                next_level += branches(t)
+                curr_level.append(root(t))
             print(curr_level)
-            expand_next, next_level, curr_level = ____________________
+            expand_next, next_level, curr_level = next_level, [], []
     ```
 
 2. Implement a function `running_total` that mutates a list of numbers such
@@ -40,7 +38,10 @@ layout: post
         >>> lst  # [1, 1+2, 1+2+3]
         [1, 3, 6]
         """
-        return
+        total = 0
+        for i in range(len(lst)):
+            total += lst[i]
+            lst[i] = total
     ```
 
 3. Draw the environment diagram.
@@ -58,3 +59,5 @@ layout: post
     cubs = world(blue_jays)
     royals = world(cubs)
     ```
+
+    [Environment Diagram](http://goo.gl/xwFCyo)

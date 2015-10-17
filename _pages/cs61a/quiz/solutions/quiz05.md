@@ -1,9 +1,7 @@
 ---
-title: Discussion 5 Quiz
+title: Discussion 5 Quiz Solutions
 layout: post
 ---
-
-[Solutions](/cs61a/quiz/solutions/quiz05.html)
 
 1. Implement a class `LoopList` that has a method `at_index`. If `at_index` is
 called with an index that is too large, the `LoopList` will loop around back
@@ -16,7 +14,11 @@ to the beginning.
         >>> [x.at_index(i) for i in range(10)]  # loops around!
         [3, 1, 4, 3, 1, 4, 3, 1, 4, 3]
         """
-        "YOUR CODE HERE"
+        def __init__(self, lst):
+            self.lst = lst
+
+        def at_index(self, i):
+            return self.lst[i % len(self.lst)]
     ```
 
 2. Draw the environment diagram (this one's hard!).
@@ -31,3 +33,5 @@ to the beginning.
     
     ring = campa(lambda nile: 100)
     ```
+
+    [Environment Diagram](http://goo.gl/vYfQRv)
