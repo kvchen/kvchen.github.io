@@ -30,14 +30,32 @@ layout: post
       'YOUR-CODE-HERE
     )
 
-    scm> (define a (take ’(1 2 3) 2))
+    scm> (define a (take '(1 2 3) 2))
     scm> (car a)
     (1 2)
     scm> (cdr a)
     (3)
-    scm> (define b (take ’(1 2 3) 4))  ; when n > (length s)
+    scm> (define b (take '(1 2 3) 4))  ; when n > (length s)
     scm> (car b)
     (1 2 3)
     scm> (cdr b)
     ()
     ```
+
+3. Write a function to slice a list in Scheme as you would a list in Python, starting at the `start` index and ending one before the `end` index. Assume that the step size is 1, and `start` and `end` are both non-negative.
+
+    ```scheme
+    (define (slice lst start end)
+        'YOUR-CODE-HERE
+    )
+
+    scm> (define a '(3 1 4 1 5 9))
+    scm> (slice a 2 5)
+    (4 1 5)
+    scm> (slice a 10 3)
+    ()
+    scm> (slice a 1 100)
+    (1 4 1 5 9)
+    ```
+
+    Bonus challenge: Write the same `slice` procedure that also accepts a `step` argument, along with negative values of `start` and `end`!
