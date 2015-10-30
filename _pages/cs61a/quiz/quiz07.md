@@ -5,7 +5,7 @@ layout: post
 
 [Attendance Form](http://goo.gl/forms/11G42Sdnzm)
 
-<!-- [Solutions](/cs61a/quiz/solutions/quiz06.html) -->
+<!-- [Solutions](/cs61a/quiz/solutions/quiz07.html) -->
 
 1. Draw the box-and-pointer diagrams for each of the following:
 
@@ -29,4 +29,15 @@ layout: post
     (define (take s n)
       'YOUR-CODE-HERE
     )
+
+    scm> (define a (take ’(1 2 3) 2))
+    scm> (car a)
+    (1 2)
+    scm> (cdr a)
+    (3)
+    scm> (define b (take ’(1 2 3) 4))  ; when n > (length s)
+    scm> (car b)
+    (1 2 3)
+    scm> (cdr b)
+    ()
     ```
