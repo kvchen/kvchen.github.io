@@ -4,6 +4,7 @@ layout: post
 ---
 
 [Attendance Form](http://goo.gl/forms/11G42Sdnzm)
+
 <!-- [Solutions](/cs61a/quiz/solutions/quiz06.html) -->
 
 1. Draw the box-and-pointer diagrams for each of the following:
