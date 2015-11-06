@@ -3,8 +3,6 @@ title: Discussion 8 Quiz
 layout: post
 ---
 
-[Attendance Form](http://goo.gl/forms/CqzmD8ql4H)
-
 {% problem %}
 
 Write a tail-recursive procedure `binary-to-decimal` that converts a list `bits` of zeros and ones into the corresponding base-10 number. **Hint**: Use a helper procedure!
