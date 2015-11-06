@@ -24,7 +24,7 @@ scm> (binary-to-decimal (list 1 1 1 1 0 1))  ; 32 + 16 + 8 + 4 + 1
 61
 ```
 
-<!-- {% solution %}
+{% solution %}
 
 ```scheme
 (define (binary-to-decimal bits)
@@ -37,7 +37,7 @@ scm> (binary-to-decimal (list 1 1 1 1 0 1))  ; 32 + 16 + 8 + 4 + 1
 )
 ```
 
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
 
 
@@ -73,7 +73,7 @@ def matched_up(parens):
     return _____________________
 ```
 
-<!-- {% solution %}
+{% solution %}
 
 ```python3
 def matched_up(parens):
@@ -90,5 +90,5 @@ def matched_up(parens):
     return len(stack) == 0
 ```
 
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
