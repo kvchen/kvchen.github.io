@@ -34,8 +34,8 @@ links:
 
 # Logistics
 
-gems: 
-  - jemoji
+# gems: ["jemoji"]
+gems: []
 include: [".htaccess"]
 exclude: ["Rakefile", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 

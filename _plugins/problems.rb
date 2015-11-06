@@ -4,12 +4,10 @@ require 'uri'
 
 module Jekyll
   class SolutionBlockTag < Liquid::Tag
-    @@solution_id = 0
-
     def render(context)
-      @@solution_id += 1
-      solution_toggle = "<a class=\"solution-toggle\" solution=\"#{ @@solution_id }\" href=\"#\">Toggle Solution</a>"
-      solution_div = "<div class=\"solution\" id=\"#{ @@solution_id }\">"
+      problem_num = context.environments.first['problem_num'] ||= 1
+      solution_toggle = "<a class=\"solution-toggle\" solution=\"#{ problem_num }\" href=\"#\">Toggle Solution</a>"
+      solution_div = "<div class=\"solution\" id=\"#{ problem_num }\">"
 
       "#{ solution_toggle } #{ solution_div }\n"
     end
@@ -22,14 +20,10 @@ module Jekyll
   end
 
   class ProblemBlockTag < Liquid::Tag
-    def initialize(tag_name, markup, options)
-      super
-    end
-
     def render(context)
-      value = context.environments.first['problem_num'] ||= 1
-      context.environments.first['problem_num'] = value + 1
-      "<h1>Question #{ value.to_s }</h1>"
+      problem_num = context.environments.first['problem_num'] ||= 1
+      context.environments.first['problem_num'] = problem_num + 1
+      "<h1>Question #{ problem_num.to_s }</h1>"
     end
   end
 

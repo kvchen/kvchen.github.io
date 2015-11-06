@@ -14,16 +14,12 @@ enableClickHandlers = ->
     $('html, body').animate
       'scrollTop': 0
 
-  $('.hint-toggle').on 'click', (e) ->
+  $('.solution-toggle').click (e) ->
     e.preventDefault()
-    $(".hint").slideToggle 'medium'
-
-  $('.solution-toggle').on 'click', (e) ->
-    e.preventDefault()
-    $(".solution").slideToggle 'medium'
+    solution = $(this).attr 'solution'
+    $("##{solution}").fadeToggle 'medium'
 
 
 disableClickHandlers = ->
-  $('.hint-toggle').off 'click'
   $('.solution-toggle').off 'click'
   $('.js-jump-top').off 'click'
