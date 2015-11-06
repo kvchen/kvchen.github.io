@@ -24,7 +24,22 @@ scm> (binary-to-decimal (list 1 1 1 1 0 1))  ; 32 + 16 + 8 + 4 + 1
 61
 ```
 
+<!-- {% solution %}
+
+```scheme
+(define (binary-to-decimal bits)
+  (define (helper bits sofar)
+    (if (null? bits)
+        so - far
+        (helper (cdr bits)
+                (+ (* 2 sofar) (car bits)))))
+  (helper bits 0)
+)
+```
+
+{% endsolution %} -->
 {% endproblem %}
+
 
 
 {% problem %}
@@ -51,10 +66,29 @@ def matched_up(parens):
     for c in parens:
         if _____________________:
             _____________________
-        elif _____________________ or _____________________:
-            if _____________________:
+        elif _____________________:
+            if _____________________ or _____________________:
                 return False
 
     return _____________________
 ```
+
+<!-- {% solution %}
+
+```python3
+def matched_up(parens):
+    """Checks that all the parentheses in a string are matched up properly."""
+    stack = []
+
+    for c in parens:
+        if c == '(':
+            stack.append(c)
+        elif c == ')':
+            if not stack or stack.pop() != '(':
+                return False
+
+    return len(stack) == 0
+```
+
+{% endsolution %} -->
 {% endproblem %}
