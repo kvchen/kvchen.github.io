@@ -28,11 +28,10 @@ scm> (binary-to-decimal (list 1 1 1 1 0 1))  ; 32 + 16 + 8 + 4 + 1
 (define (binary-to-decimal bits)
   (define (helper bits sofar)
     (if (null? bits)
-        so - far
+        sofar
         (helper (cdr bits)
                 (+ (* 2 sofar) (car bits)))))
-  (helper bits 0)
-)
+  (helper bits 0))
 ```
 
 {% endsolution %}
