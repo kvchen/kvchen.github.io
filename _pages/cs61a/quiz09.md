@@ -3,8 +3,6 @@ title: Discussion 9 Quiz
 layout: post
 ---
 
-[Discussion Attendance Form](http://goo.gl/forms/lbpnbUxksv)
-
 Please fill out [this form](http://goo.gl/forms/umLxwRPaf8) to make next week's lab a little more interesting!
 
 {% problem %}
@@ -28,7 +26,7 @@ What are the first four values of the stream `s`?
 (define s (mix (match sweet '(1 2 3))))
 ```
 
-<!-- {% solution %}
+{% solution %}
 The key here is to think about the purpose of `sweet` and `match`:
 
 `sweet`: This returns a stream of lists, with each next element enclosed in one more set of parentheses.
@@ -68,7 +66,7 @@ So far so good! Now that we know what `mix` does, we can apply it to this list o
 [3]: ((((1))))
 ...
 ```
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
 
 
@@ -99,7 +97,7 @@ class Tree:
         self.branches = list(branches)
 ```
 
-<!-- {% solution %}
+{% solution %}
 The simplest way to accomplish this is to use a generator in the `__iter__` method.
 
 ```python3
@@ -108,5 +106,5 @@ def __iter__(self):
     for branch in self.branches:
         yield from branch
 ```
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
