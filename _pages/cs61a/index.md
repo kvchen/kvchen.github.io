@@ -30,6 +30,9 @@ items:
   - title: Quiz 8
     description: Tail Calls and Interpreters
     url: /cs61a/quiz08/
+  - title: Quiz 9
+    description: Iterators and Streams
+    url: /cs61a/quiz09/
 ---
 
 # Info
