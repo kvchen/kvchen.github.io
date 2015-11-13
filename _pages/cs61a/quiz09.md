@@ -5,6 +5,8 @@ layout: post
 
 [Discussion Attendance Form](http://goo.gl/forms/lbpnbUxksv)
 
+Please fill out [this form](http://goo.gl/forms/umLxwRPaf8) to make next week's lab a little more interesting!
+
 {% problem %}
 
 What are the first four values of the stream `s`?
