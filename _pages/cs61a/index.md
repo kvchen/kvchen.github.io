@@ -33,6 +33,9 @@ items:
   - title: Quiz 9
     description: Iterators and Streams
     url: /cs61a/quiz09/
+  - title: Quiz 10
+    description: SQL
+    url: /cs61a/quiz10/
 ---
 
 # Info
