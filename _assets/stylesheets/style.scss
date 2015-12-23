@@ -1,7 +1,8 @@
 $primary: #F2523A;
-$secondary: #2D3E50;
-$background: #FEFEFE;
-$selection: #E7E7E7;
+$secondary: #534636;
+$tertiary: #3B3228;
+$background: #FFFEFB;
+$selection: #B8AFAD;
 
 
 html, body { height: 100%; }
@@ -441,7 +442,7 @@ table {
 
     .site-title a:hover,
     .button-square:hover {
-        background: #121212;
+        background: $tertiary;
     }
 
     .button-jump-top {

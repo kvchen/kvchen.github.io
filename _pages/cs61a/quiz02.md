@@ -7,14 +7,14 @@ layout: post
 
 Fill in the blanks (without using any numbers in the first blank!) to get the expected output.
 
-```python3
+```python
 >>> (lambda x: lambda y: ________)(___)(lambda z: z*z)()
 9
 ```
 
 {% solution %}
 
-```python3
+```python
 >>> (lambda x: lambda y: lambda: y(x))(3)(lambda z: z*z)()
 9
 ```
@@ -28,7 +28,7 @@ Fill in the blanks (without using any numbers in the first blank!) to get the ex
 
 Draw the environment diagram resulting from running the following code:
 
-```python3
+```python
 x = 2
 def dread(pirate):
     x = 30
@@ -55,7 +55,7 @@ http://pythontutor.com/composingprograms.html#code=x+%3D+2%0Adef+dread(pirate%29
 
 Suppose we've already entered the following code into the Python interpreter:
 
-```python3
+```python
 wild = 2
 
 def pig(out):
@@ -84,7 +84,7 @@ def swine(hog):
 
 What would Python print for each of the following lines?
 
-```python3
+```python
 >>> pig(3)
 
 >>> y = hog(7)
@@ -96,7 +96,7 @@ What would Python print for each of the following lines?
 
 {% solution %}
 
-```python3
+```python
 >>> pig(3)
 oink
 oink

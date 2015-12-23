@@ -1,10 +1,10 @@
 ---
-title: Resources
-description: helpful stuff
-slug: resources
+title: Stuff
+description: helpful resources
+slug: stuff
 
 layout: resource
-permalink: /resources/
+permalink: /stuff/
 
 items:
   - title: CS61A

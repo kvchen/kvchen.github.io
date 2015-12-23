@@ -21,7 +21,7 @@ Are these primitive expressions or call expressions?
 
 The last one's tricky! Try typing these two into a Python interpreter to convince yourself:
 
-```python3
+```python
 >>> 3 + 4
 7
 >>> (3).__add__(4)
@@ -49,7 +49,7 @@ We make a new frame whenever we call a _user-defined_ function. This means we do
 
 Implement the function `nearest_two`, which takes a positive number `x` as input, and returns the power of two (..., 1/8, 1/4, 1/2, 1, 2, 4, 8, ...) that is nearest to `x`. If there is a tie, return the larger value.
 
-```python3
+```python
 def nearest_two(x):
     """Returns the power of two that is nearest to x.
     >>> nearest_two(8)
@@ -68,7 +68,7 @@ def nearest_two(x):
 
 {% solution %}
 
-```python3
+```python
 def nearest_two(x):
     """Returns the power of two that is nearest to x.
     >>> nearest_two(8)
@@ -104,7 +104,7 @@ def nearest_two(x):
 
 Imagine we run the following lines through a Python interpreter. Draw the environment diagram after executing the program.
 
-```python3
+```python
 def swap(x, y):
     x, y = y, x
     return print('Swapped!', x, y)

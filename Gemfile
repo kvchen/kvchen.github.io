@@ -13,4 +13,3 @@ gem 'redcarpet'
 gem 'sass'
 gem 'uglifier'
 gem 'yui-compressor'
-

@@ -7,8 +7,8 @@ DEPLOY_BRANCH = 'master'
 
 CONFIG_DIR = '_config'
 CONFIG_FILES = {
-  :test => ['base.yml', 'content.yml', 'local.yml'],
-  :prod => ['base.yml', 'content.yml']
+  :test => ['base.yml', 'local.yml'],
+  :prod => ['base.yml']
 }
 
 
@@ -45,7 +45,7 @@ end
 desc 'Serve site locally'
 task :serve do
   begin
-    run_command("jekyll serve --config #{ CONFIG_ARGS } --destination #{ DEPLOY_DIR }", false)
+    run_command("jekyll serve --config #{ CONFIG_ARGS } --destination #{ DEPLOY_DIR } --drafts", false)
   rescue Interrupt
   end
 end

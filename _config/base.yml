@@ -25,11 +25,11 @@ google_analytics: UA-42434200-1
 # Links to include in top navigation
 
 links:
-  - title: Home
+  - title: About
     url: /
-#  - title: Blog
-  - title: Resources
-    url: /resources/
+  # - title: Blog
+  - title: Stuff
+    url: /stuff/
 
 
 # Logistics
