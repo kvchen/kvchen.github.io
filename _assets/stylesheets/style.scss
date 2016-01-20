@@ -78,9 +78,9 @@ code {
 
 pre {
     font-family: monospace, monospace;
-    background: #F1F0EA;
-    border: 1px solid #DDDBCC;
-    border-radius: 3px;
+    // background: #F1F0EA;
+    // border: 1px solid #DDDBCC;
+    border-radius: 4px;
     margin: 0 0 40px;
     padding: 15px 20px;
     font-size: 14px;
@@ -112,17 +112,17 @@ table {
     tr { border-bottom: 1px dotted #AEADAD; }
 }
 
-::selection {
-    background: $selection;
-    color: #000;
-    display: block;
-}
+// ::selection {
+//     background: $selection;
+//     color: #000;
+//     display: block;
+// }
 
-::-moz-selection {
-    background: $selection;
-    color: #000;
-    display: block;
-}
+// ::-moz-selection {
+//     background: $selection;
+//     color: #000;
+//     display: block;
+// }
 
 .fluid-width-video-wrapper { margin-bottom: 40px; }
 
