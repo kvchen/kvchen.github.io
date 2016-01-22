@@ -4,7 +4,10 @@ description: The Structure and Interpretation of Computer Programs
 slug: cs61a
 
 layout: resource
-items: []
+items:
+  - title: Quiz 0
+    description: Lost on the Moon
+    url: /cs61a/quiz00/
 ---
 
 # Info
@@ -23,4 +26,4 @@ items: []
 * **Anonymous Feedback**: [http://goo.gl/forms/fUieXB6oHv](http://goo.gl/forms/fUieXB6oHv)
 
 
-<!-- # In-Class Quizzes -->
+# In-Class Quizzes
