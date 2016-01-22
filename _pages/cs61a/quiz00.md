@@ -31,6 +31,13 @@ What are some advantages and disadvantages to working with others?
 
 {% problem %}
 
+There's a hallway with 100 closed lockers against the wall, lined up in a row. You begin by opening every locker, such that every locker is now open. Then, you go to every second locker and close it. Next, you go to every third locker and _toggle_ it - that is, you open it (if it's closed) and close it (if it's open). You continue this same process - toggling every fourth locker, then every fifth locker, and so on. After 100 passes (on the last one, you should only toggle locker 100), how many lockers are open?
+
+{% endproblem %}
+
+
+<!-- {% problem %}
+
 Expected value is defined as the average value of a series of outcomes, weighted by the probabilities of their occurrences. That is,
 
 {% math %}
@@ -51,4 +58,4 @@ Your TA walks up to you in section and asks if he can play a game of chance. Ins
 
 What is the expected payoff of this game (assuming you play optimally)?
 
-{% endproblem %}
+{% endproblem %} -->
