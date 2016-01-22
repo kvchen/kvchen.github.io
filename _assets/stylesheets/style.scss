@@ -1,7 +1,7 @@
 $primary: #F2523A;
 $secondary: #534636;
 $tertiary: #3B3228;
-$background: #FFFEFB;
+$background: #FEFEFE;
 $selection: #B8AFAD;
 
 
@@ -97,7 +97,7 @@ table {
     margin-bottom:40px;
     width: 100%;
 
-    tbody > tr:nth-child(odd) > td, 
+    tbody > tr:nth-child(odd) > td,
     tbody > tr:nth-child(odd) > th {
         background-color: #f7f7f3;
     }
@@ -488,7 +488,7 @@ table {
         outline: 0;
         color: $primary;
     }
-    
+
     &:hover {
         color: $primary;
     }
