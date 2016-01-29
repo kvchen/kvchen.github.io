@@ -8,6 +8,9 @@ items:
   - title: Quiz 0
     description: Lost on the Moon
     url: /cs61a/quiz00/
+  - title: Quiz 1
+    description: Control and Higher-Order Functions
+    url: /cs61a/quiz01/
 ---
 
 # Info

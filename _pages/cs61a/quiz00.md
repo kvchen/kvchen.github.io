@@ -3,8 +3,6 @@ title: Discussion 0 Quiz
 layout: post
 ---
 
-[Attendance Form](http://goo.gl/forms/0WH8adgU1e)
-
 {% problem %}
 
 What is a computer scientist? What is a programmer? What skills do they need?
