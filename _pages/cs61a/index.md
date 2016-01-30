@@ -20,7 +20,7 @@ items:
 * **Section Times**:
   * **30**: Wed, 11 AM - 12:30 PM
   * **32/132**: Wed/Fri, 12:30 PM - 2 PM
-* **Office Hours**: TBD
+* **Office Hours**: Tue 11AM - 1 PM, Thurs 11AM - 12 PM
 
 
 # Contact
