@@ -1,7 +1,7 @@
 ---
 title: cs61a
-description: The Structure and Interpretation of Computer Programs
 slug: cs61a
+description: The Structure and Interpretation of Computer Programs
 
 layout: resource
 items:
@@ -11,6 +11,9 @@ items:
   - title: Quiz 1
     description: Control and Higher-Order Functions
     url: /cs61a/quiz01/
+  - title: Quiz 2
+    description: Environment Diagrams and Recursion
+    url: /cs61a/quiz02/
 ---
 
 # Info
@@ -26,7 +29,6 @@ items:
 # Contact
 
 * **Email**: [kvchen@berkeley.edu](mailto:kvchen@berkeley.edu)
-* **Anonymous Feedback**: [http://goo.gl/forms/fUieXB6oHv](http://goo.gl/forms/fUieXB6oHv)
 
 
 # In-Class Quizzes

@@ -3,8 +3,6 @@ title: Discussion 1 Quiz
 layout: post
 ---
 
-[Attendance form](http://goo.gl/forms/FEBS5UMcIO)
-
 {% problem %}
 
 Are these primitive expressions or call expressions?
