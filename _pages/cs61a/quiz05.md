@@ -11,7 +11,7 @@ to the beginning.
 
 {% solution %}
 
-```python3
+```python
 class LoopList(object):
     """
     >>> x = LoopList([3, 1, 4])
@@ -30,7 +30,7 @@ class LoopList(object):
 
 Draw the environment diagram (this one's hard!).
 
-```python3
+```python
 def campa(nile):
     def ding(ding):
         nonlocal nile
