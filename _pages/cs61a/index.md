@@ -14,6 +14,9 @@ items:
   - title: Quiz 2
     description: Environment Diagrams and Recursion
     url: /cs61a/quiz02/
+  - title: Quiz 3
+    description: Data Abstraction and Sequences
+    url: /cs61a/quiz03/
 ---
 
 # Info

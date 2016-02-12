@@ -3,6 +3,8 @@ title: Discussion 4 Quiz
 layout: post
 ---
 
+**Note**: If you wish to meet with me one on one to discuss the course, please shoot me an email with your available times. My email can be found on the [course info page](/cs61a/). If you want to tell me how to improve, please use [this form](http://goo.gl/forms/fUieXB6oHv) or send me a private email if you want me to get back to you.
+
 {% problem %}
 
 Complete the implementation of `print_by_level`, which takes in a tree and prints each "level" of the tree in sequential order, as a series of lists. A level of a tree is defined as all the elements at the same depth from the root. Assume that you can use `branches(tree)` and `root(tree)`.
