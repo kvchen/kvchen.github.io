@@ -3,8 +3,6 @@ title: Discussion 3 Quiz
 layout: post
 ---
 
-[Attendance form](http://goo.gl/forms/rWwTi4vmPC)
-
 {% problem %}
 
 Draw the environment diagram.
