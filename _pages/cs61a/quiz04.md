@@ -5,7 +5,7 @@ layout: post
 
 [Attendance Form](http://goo.gl/forms/xxWWK7SLDJ)
 
-**Note**: If you wish to meet with me one on one to discuss the course, please shoot me an email with your available times. My email can be found on the [course info page](/cs61a/). If you want to tell me how to improve, please use [this form](http://goo.gl/forms/fUieXB6oHv) or send me a private email if you want me to get back to you.
+**Note**: If you wish to meet with me one on one to discuss the course, please shoot me an email with your available times. My email can be found on the [course info page](/cs61a/).
 
 {% problem %}
 
