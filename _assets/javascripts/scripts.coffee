@@ -1,14 +1,5 @@
-InstantClick.on 'change', () ->
-  ga 'send', 'pageview', location.pathname + location.search
-
-  disableClickHandlers()
-  enableClickHandlers()
-
 $ ->
-  enableClickHandlers()
-
-
-enableClickHandlers = ->
+  enableClickHandlers = ->
   $('.js-jump-top').on 'click', (e) ->
     e.preventDefault()
     $('html, body').animate
@@ -17,9 +8,19 @@ enableClickHandlers = ->
   $('.solution-toggle').click (e) ->
     e.preventDefault()
     solution = $(this).attr 'solution'
-    $("##{solution}").fadeToggle 'medium'
+    $("##{ solution }").fadeToggle 'medium'
 
 
-disableClickHandlers = ->
-  $('.solution-toggle').off 'click'
-  $('.js-jump-top').off 'click'
+  disableClickHandlers = ->
+    $('.solution-toggle').off 'click'
+    $('.js-jump-top').off 'click'
+
+
+  InstantClick.on 'change', () ->
+    ga 'send', 'pageview', location.pathname + location.search
+    MathJax.Hub.Queue ['Typeset', MathJax.Hub]
+
+    disableClickHandlers()
+    enableClickHandlers()
+
+  enableClickHandlers()
