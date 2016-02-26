@@ -3,6 +3,8 @@ title: Discussion 4 Quiz
 layout: post
 ---
 
+[Attendance Form](http://goo.gl/forms/xxWWK7SLDJ)
+
 **Note**: If you wish to meet with me one on one to discuss the course, please shoot me an email with your available times. My email can be found on the [course info page](/cs61a/). If you want to tell me how to improve, please use [this form](http://goo.gl/forms/fUieXB6oHv) or send me a private email if you want me to get back to you.
 
 {% problem %}
@@ -13,43 +15,69 @@ Complete the implementation of `print_by_level`, which takes in a tree and print
 def print_by_level(t):
     """Prints each level of the tree as a list.
 
-    >>> t = tree(1, [tree(3, [tree(2), tree(4)]), tree(6, [tree(5), tree(7)])])
+    >>> t = tree(1, [
+    ...         tree(3, [
+    ...             tree(2),
+    ...             tree(4, [
+    ...                  tree(8)
+    ...             ])]),
+    ...         tree(6, [
+    ...             tree(5),
+    ...             tree(7)])])
     >>> print_by_level(t)
     [1]
     [3, 6]
     [2, 4, 5, 7]
+    [8]
     """
-    expand_next, next_level, curr_level = [t], [], []
-    while expand_next:
-        for t in expand_next:
-            ____________________
-            curr_level.append(_________________)
-        print(curr_level)
-        expand_next, next_level, curr_level = ____________________
+    current_level, next_level = [t], []
+
+    while len(current_level) != 0:
+        shown_values = []
+
+        for tree in current_level:
+            next_level.extend(____________)
+            shown_values.append(____________)
+
+        print(shown_values)
+        current_level, next_level = ____________, ____________
 ```
 
-{% solution %}
+<!-- {% solution %}
 
 ```python
 def print_by_level(t):
     """Prints each level of the tree as a list.
 
-    >>> t = tree(1, [tree(3, [tree(2), tree(4)]), tree(6, [tree(5), tree(7)])])
+    >>> t = tree(1, [
+    ...         tree(3, [
+    ...             tree(2),
+    ...             tree(4, [
+    ...                  tree(8)
+    ...             ])]),
+    ...         tree(6, [
+    ...             tree(5),
+    ...             tree(7)])])
     >>> print_by_level(t)
     [1]
     [3, 6]
     [2, 4, 5, 7]
+    [8]
     """
-    expand_next, next_level, curr_level = [t], [], []
-    while expand_next:
-        for t in expand_next:
-            next_level += branches(t)
-            curr_level.append(root(t))
-        print(curr_level)
-        expand_next, next_level, curr_level = next_level, [], []
+    current_level, next_level = [t], []
+
+    while len(current_level) != 0:
+        shown_values = []
+
+        for tree in current_level:
+            next_level.extend(children(tree))
+            shown_values.append(label(tree))
+
+        print(shown_values)
+        current_level, next_level = next_level, []
 ```
 
-{% endsolution %}
+{% endsolution %} -->
 {% endproblem %}
 
 
@@ -68,7 +96,7 @@ def running_total(lst):
     return
 ```
 
-{% solution %}
+<!-- {% solution %}
 
 ```python
 def running_total(lst):
@@ -84,7 +112,7 @@ def running_total(lst):
         lst[i] = total
 ```
 
-{% endsolution %}
+{% endsolution %} -->
 {% endproblem %}
 
 
@@ -107,9 +135,9 @@ cubs = world(blue_jays)
 royals = world(cubs)
 ```
 
-{% solution %}
+<!-- {% solution %}
 {% environment %}
 http://pythontutor.com/composingprograms.html#code=def+world(series%29%3A%0A++++if+len(series%29+%25+2+%3D%3D+0%3A%0A++++++++series%5B0%5D+%3D+series%5B%3A2%5D%0A++++++++return+%5Bseries.pop(1%29%5D%0A++++else%3A%0A++++++++return+series%5B%3A2%5D%0A%0Ablue_jays+%3D+%5B1,+2,+3,+4%5D%0Acardinals+%3D+world(blue_jays%29%0Acubs+%3D+world(blue_jays%29%0Aroyals+%3D+world(cubs%29&mode=display&origin=composingprograms.js&cumulative=true&py=3&rawInputLstJSON=%5B%5D&curInstr=0
 {% endenvironment %}
-{% endsolution %}
+{% endsolution %} -->
 {% endproblem %}
