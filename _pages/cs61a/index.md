@@ -17,9 +17,9 @@ items:
   - title: Quiz 3
     description: Data Abstraction and Sequences
     url: /cs61a/quiz03/
-  - title: Quiz 4
+  - title: Quiz 5
     description: Trees and Mutation
-    url: /cs61a/quiz04/
+    url: /cs61a/quiz05/
 ---
 
 # Info
