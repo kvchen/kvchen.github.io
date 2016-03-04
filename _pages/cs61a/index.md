@@ -20,6 +20,9 @@ items:
   - title: Quiz 5
     description: Trees and Mutation
     url: /cs61a/quiz05/
+  - title: Quiz 6
+    description: Inheritance and Nonlocal
+    url: /cs61a/quiz06/
 ---
 
 # Info

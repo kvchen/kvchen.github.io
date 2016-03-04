@@ -19,9 +19,7 @@ class LoopList(object):
     pass
 ```
 
-
-
-<!-- {% solution %}
+{% solution %}
 
 ```python
 class LoopList(object):
@@ -37,7 +35,7 @@ class LoopList(object):
         return self.lst[idx % len(self.lst)]
 ```
 
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
 
 
@@ -57,7 +55,7 @@ def campa(nile):
 ring = campa(lambda nile: 100)
 ```
 
-<!-- {% solution %}
+{% solution %}
 
 When looking through the environment diagram, be very _very_ careful about the order of operations! Remember that for every function call, we do:
 
@@ -68,5 +66,5 @@ When looking through the environment diagram, be very _very_ careful about the o
 {% environment %}
 http://pythontutor.com/composingprograms.html#code=def+campa(nile%29%3A%0A++++def+ding(ding%29%3A%0A++++++++nonlocal+nile%0A++++++++def+nile(ring%29%3A%0A++++++++++++return+ding%0A++++return+nile(ding(1914%29%29+%2B+nile(1917%29%0A%0Aring+%3D+campa(lambda+nile%3A+100%29&mode=display&origin=composingprograms.js&cumulative=true&py=3&rawInputLstJSON=%5B%5D&curInstr=0
 {% endenvironment %}
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
