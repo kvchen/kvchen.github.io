@@ -3,6 +3,8 @@ title: Discussion 6 Quiz
 layout: post
 ---
 
+There are some [extra examples](../extra/disc06/) not on the worksheet that we went over during discussion.
+
 {% problem %}
 
 Implement a class `LoopList` that has a method `at_index`. If `at_index` is called with an index that is too large, the `LoopList` will loop around back to the beginning.

@@ -1,4 +1,9 @@
-Things to go over in this example:
+---
+title: Discussion 6 Extra
+layout: post
+---
+
+Here are some extra examples we went over in class that are important to know for the midterm.
 
 ### Inherited class variables
 
