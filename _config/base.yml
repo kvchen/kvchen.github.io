@@ -3,6 +3,7 @@ description:         a coding blog
 url:                 http://keff.me
 permalink:           /:year/:month/:day/:title/
 relative_permalinks: false
+encoding: utf-8
 
 
 # Owner/author information

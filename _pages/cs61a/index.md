@@ -23,6 +23,9 @@ items:
   - title: Quiz 6
     description: Inheritance and Nonlocal
     url: /cs61a/quiz06/
+  - title: Quiz 7
+    description: Orders of Growth and Trees
+    url: /cs61a/quiz07/
 ---
 
 # Info
