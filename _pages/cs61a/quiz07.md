@@ -7,7 +7,7 @@ layout: post
 
 {% problem %}
 
-On the midterm, you wrote an algorithm to figure out the number of ways to parenthesize an expression. Here's a brief refresher of how it worked:
+One of your favorite problems on the midterm was `count_groupings`, which asked you to write an algorithm to figure out the number of ways to group terms together in a multiplicative sequence. Here's a brief refresher of how it worked:
 
 ```python
 def count_groupings(n):
@@ -34,12 +34,13 @@ def count_groupings(n):
     while i < n:
         total += count_groupings (i) * count_groupings (n - i)
         i += 1
+
     return total
 ```
 
 What's the runtime of this algorithm?
 
-<!-- {% solution %}
+{% solution %}
 
 **Note**: This question is more advanced that what we'd ask you on an exam. If you're interested in further runtime analysis, you can check out [the Master theorem](https://en.wikipedia.org/wiki/Master_theorem), which makes it simple to analyze runtimes for recursive algorithms.
 
@@ -75,7 +76,7 @@ $$T(n) = 3^{n-1} - 1 \in \mathcal{O}(3^n)$$
 
 **Aside**: This is actually a very famous series known as the [Catalan numbers](https://en.wikipedia.org/wiki/Catalan_number). Like the Fibonacci sequence, there is a closed-form solution that can yield a given number in the sequence without having to calculate the previous ones.
 
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
 
 
@@ -92,9 +93,9 @@ Draw the box-and-pointer diagram for the linked list `link` after the following 
 >>> link.rest.rest.rest = link.rest
 ```
 
-<!-- {% solution %}
+{% solution %}
 {% img cs61a/quiz07_q2 %}
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
 
 
@@ -108,7 +109,7 @@ def all_paths(tree):
     pass    
 ```
 
-<!-- {% solution %}
+{% solution %}
 
 ```python
 def all_paths(tree):
@@ -123,5 +124,5 @@ def all_paths(tree):
     return result
 ```
 
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
