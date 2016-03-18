@@ -5,6 +5,8 @@ layout: post
 
 [Discussion Attendance](http://goo.gl/forms/cXvrKdFKIg)
 
+[Discussion 8 Warmup](../warmup08/)
+
 {% problem %}
 
 Draw the box-and-pointer diagrams for each of the following:
