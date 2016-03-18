@@ -26,6 +26,9 @@ items:
   - title: Quiz 7
     description: Orders of Growth and Trees
     url: /cs61a/quiz07/
+  - title: Quiz 8
+    description: Scheme
+    url: /cs61a/quiz08/
 ---
 
 # Info

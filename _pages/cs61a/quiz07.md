@@ -3,8 +3,6 @@ title: Discussion 7 Quiz
 layout: post
 ---
 
-[Attendance form](http://goo.gl/forms/fK15ze5BSE)
-
 {% problem %}
 
 One of your favorite problems on the midterm was `count_groupings`, which asked you to write an algorithm to figure out the number of ways to group terms together in a multiplicative sequence. Here's a brief refresher of how it worked:
