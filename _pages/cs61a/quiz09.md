@@ -3,6 +3,15 @@ title: Discussion 9 Quiz
 layout: post
 ---
 
+[Attendance form](http://goo.gl/forms/B51poeqLC9)
+
+
+Here are the two files that we used today in discussion, typed out for your convenience.
+
+[pair.py](../extra/disc09/pair.py)
+
+[calculator.py](../extra/disc09/calculator.py)
+
 {% problem %}
 
 Write a tail-recursive procedure `binary-to-decimal` that converts a list `bits` of zeros and ones into the corresponding base-10 number. **Hint**: Use a helper procedure! Is there an easier way to do it than starting at the end of the list?
@@ -61,16 +70,16 @@ def matched_up(parens):
     stack = []
 
     for c in parens:
-        if _____________________:
+        if c == '(':
             _____________________
-        elif _____________________:
+        elif c == ')':
             if _____________________ or _____________________:
                 return False
 
     return _____________________
 ```
 
-{% solution %}
+<!-- {% solution %}
 
 ```python3
 def matched_up(parens):
@@ -87,5 +96,5 @@ def matched_up(parens):
     return len(stack) == 0
 ```
 
-{% endsolution %}
+{% endsolution %} -->
 {% endproblem %}
