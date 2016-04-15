@@ -3,9 +3,6 @@ title: Discussion 9 Quiz
 layout: post
 ---
 
-[Attendance form](http://goo.gl/forms/B51poeqLC9)
-
-
 Here are the two files that we used today in discussion, typed out for your convenience.
 
 [pair.py](../extra/disc09/pair.py)
