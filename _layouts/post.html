@@ -9,6 +9,8 @@ layout: default
 
             {% if page.date %}
             <p class="post-date"><time>Published {{ page.date | date: "%B %d, %Y" }}</time></p>
+            {% elsif page.description %}
+            <p class="post-date"><time>{{ page.description }}</time></p>
             {% endif %}
         </header>
 
