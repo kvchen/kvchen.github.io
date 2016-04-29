@@ -66,7 +66,7 @@ task :push do
   # Avoid race conditions with this one simple trick!
   run_command('sleep 5')
 
-  run_command("git filter-branch --subdirectory-filter #{ DEPLOY_DIR }/ -f")
+  run_command("git -c commit.gpgsign=false filter-branch --subdirectory-filter #{ DEPLOY_DIR }/ -f")
   run_command("git push origin #{ DEPLOY_BRANCH } --force")
 
   run_command("rm -rf #{ DEPLOY_DIR }")
