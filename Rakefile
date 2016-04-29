@@ -61,7 +61,7 @@ task :push do
 
   message = "Site updated at #{ Time.now.utc }"
   run_command('git add -A')
-  run_command("git commit -m \"#{ message }\"")
+  run_command("git -c commit.gpgsign=false commit -m \"#{ message }\"")
 
   # Avoid race conditions with this one simple trick!
   run_command('sleep 5')
