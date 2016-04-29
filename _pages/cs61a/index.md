@@ -38,6 +38,9 @@ items:
   - title: Quiz 11
     description: SQL
     url: /cs61a/quiz11/
+  - title: Quiz 12
+    description: Final Review
+    url: /cs61a/quiz12/
 ---
 
 # Info

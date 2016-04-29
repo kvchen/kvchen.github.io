@@ -1,9 +1,7 @@
 ---
-title: Discussion 10 Quiz
+title: Discussion 11 Quiz
 layout: post
 ---
-
-[Discussion Attendance](http://goo.gl/forms/Azn3ViV9K3)
 
 Download the `records` and `meetings` tables used in discussion [here](/cs61a/extra/disc11/disc11.sql). To load it into SQLite3, you should run the following command (in the same folder as `disc11.sql`):
 
@@ -49,7 +47,7 @@ SELECT exp FROM twos;
 1024
 ```
 
-<!-- {% solution %}
+{% solution %}
 ```sql
 WITH twos(exp) AS (
   SELECT 1 UNION
@@ -57,7 +55,7 @@ WITH twos(exp) AS (
 )
 SELECT exp FROM twos;
 ```
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
 
 
@@ -85,7 +83,7 @@ SELECT * FROM squares
 1089
 ```
 
-<!-- {% solution %}
+{% solution %}
 ```sql
 CREATE TABLE squares AS
   WITH naturals(n) AS (
@@ -98,7 +96,7 @@ CREATE TABLE squares AS
     FROM naturals AS a, naturals AS b
     WHERE a.n * a.n = b.n AND b.n > 156;
 ```
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
 
 
@@ -118,7 +116,7 @@ FROM __________________________________________
 WHERE _________________________________________;
 ```
 
-<!-- {% solution %}
+{% solution %}
 ```sql
 WITH given(char, weight) AS (
   SELECT 'c', 1 UNION
@@ -130,5 +128,5 @@ SELECT a.char || b.char || c.char || d.char
 FROM given AS a, given AS b, given AS c, given AS d
 WHERE a.weight + b.weight + c.weight + d.weight = 1111;
 ```
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
