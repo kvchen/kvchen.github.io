@@ -7,8 +7,8 @@ DEPLOY_BRANCH = 'master'
 
 CONFIG_DIR = '_config'
 CONFIG_FILES = {
-  :test => ['base.yml', 'local.yml'],
-  :prod => ['base.yml']
+  :test => ['base.yml'],
+  :prod => ['base.yml', 'deploy.yml']
 }
 
 
@@ -56,7 +56,7 @@ task :push do
   run_command("git branch -D #{ DEPLOY_BRANCH }", false)
   run_command("git checkout -b #{ DEPLOY_BRANCH }")
 
-  run_command("jekyll build --config #{ CONFIG_ARGS } --destination #{ DEPLOY_DIR }")
+  run_command("JEKYLL_ENV=production jekyll build --config #{ CONFIG_ARGS } --destination #{ DEPLOY_DIR }")
   run_command("touch #{ File.join(DEPLOY_DIR, '.nojekyll') }")
 
   message = "Site updated at #{ Time.now.utc }"

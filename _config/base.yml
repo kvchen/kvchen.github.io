@@ -1,7 +1,7 @@
-title:               keff.me
-description:         a coding blog
-url:                 http://keff.me
-permalink:           /:year/:month/:day/:title/
+title: keff.me
+description: a coding blog
+url: http://localhost:4000
+permalink: /:year/:month/:day/:title/
 relative_permalinks: false
 encoding: utf-8
 
@@ -9,13 +9,13 @@ encoding: utf-8
 # Owner/author information
 
 owner:
-  name:           Kevin Chen
-  email:          kvchen@berkeley.edu
+  name: Kevin Chen
+  email: kvchen@berkeley.edu
 social:
-  github:         https://github.com/kvchen
-  facebook:       https://www.facebook.com/nuclearsalad
-  google_plus:    https://plus.google.com/+KevinChen0/posts
-  linkedin:       http://www.linkedin.com/pub/kevin-chen/70/b70/836
+  github: https://github.com/kvchen
+  facebook: https://www.facebook.com/nuclearsalad
+  google_plus: https://plus.google.com/+KevinChen0/posts
+  linkedin: http://www.linkedin.com/pub/kevin-chen/70/b70/836
 
 
 # Analytics and webmaster tools stuff goes here
@@ -29,14 +29,14 @@ links:
   - title: About
     url: /
   # - title: Blog
-  - title: Stuff
-    url: /stuff/
+  # - title: Projects
+  #   url: /projects/
+  - title: CS61A
+    url: /cs61a/
 
 
 # Logistics
 
-# gems: ["jemoji"]
-gems: []
 include: [".htaccess"]
 exclude: ["Rakefile", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
@@ -44,25 +44,11 @@ assets:
   js_compressor: uglify
   css_compressor: yui
 
-timezone:    America/Los_Angeles
-future:      true
-highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["tables", "fenced_code_blocks"]
+timezone: America/Los_Angeles
+future: true
 
-# markdown:    kramdown
-
-# kramdown:
-#   auto_ids: true
-#   footnote_nr: 1
-#   entity_output: as_char
-#   toc_levels: 1..6
-#   use_coderay: false
-
-#   coderay:
-#     coderay_line_numbers:
-#     coderay_line_numbers_start: 1
-#     coderay_tab_width: 4
-#     coderay_bold_every: 10
-#     coderay_css: class
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax
