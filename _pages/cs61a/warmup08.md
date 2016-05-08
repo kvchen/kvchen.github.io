@@ -7,7 +7,7 @@ layout: post
 
 Suppose we've run this code in Python:
 
-```python
+~~~python
 class ClassA:
     a = 0
     c = 10
@@ -24,11 +24,11 @@ class ClassB(ClassA):
     def __init__(self):
         ClassB.b += 1
         self.b = ClassB.b
-```
+~~~
 
 What would the Python interpreter display for each of the following lines?
 
-```python
+~~~python
 >>> ClassA.a
 
 >>> a = ClassA()
@@ -42,10 +42,10 @@ What would the Python interpreter display for each of the following lines?
 >>> b = ClassB()
 >>> [b.b, ClassB.b]
 
-```
+~~~
 
 <!-- {% solution %}
-```python
+~~~python
 >>> ClassA.a
 0
 >>> a = ClassA()
@@ -59,6 +59,6 @@ What would the Python interpreter display for each of the following lines?
 >>> b = ClassB()
 >>> [b.b, ClassB.b]
 [3, 3]
-```
+~~~
 {% endsolution %} -->
 {% endproblem %}

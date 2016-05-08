@@ -13,24 +13,24 @@ Here are the two files that we used today in discussion, typed out for your conv
 
 Write a tail-recursive procedure `binary-to-decimal` that converts a list `bits` of zeros and ones into the corresponding base-10 number. **Hint**: Use a helper procedure! Is there an easier way to do it than starting at the end of the list?
 
-```scheme
+~~~scheme
 (define (binary-to-decimal bits)
   'YOUR-CODE-HERE
 )
-```
+~~~
 
-```scheme
+~~~scheme
 scm> (binary-to-decimal '())
 0
 scm> (binary-to-decimal '(1 0 1))        ; 4 + 1
 5
 scm> (binary-to-decimal '(1 1 1 1 0 1))  ; 32 + 16 + 8 + 4 + 1
 61
-```
+~~~
 
 {% solution %}
 
-```scheme
+~~~scheme
 (define (binary-to-decimal bits)
   (define (helper bits sofar)
     (if (null? bits)
@@ -38,7 +38,7 @@ scm> (binary-to-decimal '(1 1 1 1 0 1))  ; 32 + 16 + 8 + 4 + 1
         (helper (cdr bits)
                 (+ (* 2 sofar) (car bits)))))
   (helper bits 0))
-```
+~~~
 
 {% endsolution %}
 {% endproblem %}
@@ -49,7 +49,7 @@ scm> (binary-to-decimal '(1 1 1 1 0 1))  ; 32 + 16 + 8 + 4 + 1
 
 Fill in the blanks for the function `matched_up`, which takes in a string `parens` and checks if all the open parentheses are properly matched with closing parentheses. **Hint**: use `stack.pop` and `stack.append`.
 
-```python
+~~~python
 def matched_up(parens):
     """Checks that all the parentheses in a string are matched up properly.
 
@@ -74,11 +74,11 @@ def matched_up(parens):
                 return False
 
     return _____________________
-```
+~~~
 
 {% solution %}
 
-```python
+~~~python
 def matched_up(parens):
     """Checks that all the parentheses in a string are matched up properly."""
     stack = []
@@ -91,7 +91,7 @@ def matched_up(parens):
                 return False
 
     return len(stack) == 0
-```
+~~~
 
 {% endsolution %}
 {% endproblem %}

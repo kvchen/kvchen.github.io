@@ -7,7 +7,7 @@ layout: post
 
 Earlier in the semester, we defined the `Tree` class, which contains a `label` and multiple branches leading to its `children`. Here's the class for reference:
 
-```python
+~~~python
 class Tree:
     def __init__(self, label, children=()):
         self.label = label
@@ -17,7 +17,7 @@ class Tree:
 
     def is_leaf(self):
         return not self.children
-```
+~~~
 
 We wish to make these trees iterable, and display each label of the tree in _preorder_ traversal. That is, we iterate over the label of a tree before the labels of any of its children. We also iterate over each child in the order presented in the `children`.
 
@@ -28,7 +28,7 @@ We wish to make these trees iterable, and display each label of the tree in _pre
 
 One solution is to use a generator in our `__iter__` method:
 
-```python
+~~~python
 class Tree:
     def __iter__(self):
         yield self.label
@@ -36,7 +36,7 @@ class Tree:
         for child in self.children:
             for label in child:
                 yield label
-```
+~~~
 {% endsolution %}
 {% endproblem %}
 
@@ -45,7 +45,7 @@ class Tree:
 
 What are the first four values of the stream `s`?
 
-```scheme
+~~~scheme
 (define (sweet dreams)
   (cons-stream (list dreams) (sweet (list dreams))))
 
@@ -60,7 +60,7 @@ What are the first four values of the stream `s`?
       (cons (dot (car com)) (match dot (cdr com)))))
 
 (define s (mix (match sweet '(1 2 3))))
-```
+~~~
 
 {% solution %}
 The key here is to think about the purpose of `sweet` and `match`:
@@ -73,34 +73,34 @@ The key here is to think about the purpose of `sweet` and `match`:
 
 Deciphering the final line, we first look at the innermost expression:
 
-```scheme
+~~~scheme
 (match sweet '(1 2 3))
-```
+~~~
 
 Here, we're just mapping the procedure `sweet` over the list `(1 2 3)`. This gives us back a list of three infinite streams - here's the first one:
 
-```scheme
+~~~scheme
 [0]: (1)
 [1]: ((1))
 [2]: (((1)))
 [3]: ((((1))))
 ...
-```
+~~~
 
 The other two streams look the same, but with the numbers `2` and `3` instead.
 
-```scheme
+~~~scheme
 (((1) . #[delayed]) ((2) . #[delayed]) ((3) . #[delayed]))
-```
+~~~
 
 So far so good! Now that we know what `mix` does, we can apply it to this list of streams to get the first four elements of our new stream `s`:
 
-```scheme
+~~~scheme
 [0]: (1)
 [1]: ((2))
 [2]: (((3)))
 [3]: ((((1))))
 ...
-```
+~~~
 {% endsolution %}
 {% endproblem %}

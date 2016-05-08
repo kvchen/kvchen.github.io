@@ -7,7 +7,7 @@ layout: post
 
 Draw the environment diagram.
 
-```python
+~~~ python
 def reverse(lst):
     if len(lst) <= 1:
         return lst
@@ -15,7 +15,7 @@ def reverse(lst):
 
 l = [1, [2, 3], 4]
 rev = reverse(l)
-```
+~~~
 
 **Followup**: How would you modify this to _deep-reverse_ a list - that is, if an element of the list is also a list, that element gets reversed as well (and all lists under it)?
 
@@ -32,19 +32,19 @@ http://pythontutor.com/composingprograms.html#code=def+reverse(lst%29%3A%0A++++i
 
 What does the following code print?
 
-```python
+~~~ python
 lst = [None for _ in range(10)]
 for i in range(10):
     lst[i] = lambda: i
 
 for func in lst:
     print(func())
-```
+~~~
 
 {% solution %}
 Note that all the lambda functions are not called until the second for loop - they are simply defined in the first for loop. By the time the second loop spins `i` has taken on the value 9, so the number 9 is printed 10 times. The key here is that _the value of `i` is never stored inside the lambda function - the lambdas get the value of `i` from the outer frame_.
 
-```python
+~~~ python
 9
 9
 9
@@ -55,7 +55,7 @@ Note that all the lambda functions are not called until the second for loop - th
 9
 9
 9
-```
+~~~
 {% endsolution %}
 {% endproblem %}
 
@@ -65,19 +65,19 @@ Note that all the lambda functions are not called until the second for loop - th
 
 Implement a function `addup` that takes in a `lst` of numbers and a target value `n`. It should return `True` if some subset of `lst` adds up to `n`. Numbers in `lst` may not be reused. For example:
 
-```python
+~~~ python
 >>> addup([3, 4, 5], 9)
 True # 4 + 5 = 9
 >>> addup([3, 9, 27, 81], 3)
 True # 3 = 3
 >>> addup([3, 9, 27, 81], 33)
 False
-```
+~~~
 
 **Followup**: What needs to be changed if values in `lst` can be reused?
 
 {% solution %}
-```python
+~~~ python
 def addup(tup, n):
     if n == 0:
         return True
@@ -88,13 +88,13 @@ def addup(tup, n):
             if addup(tup[i+1:], n ­- num):
                 return False
         return True
-```
+~~~
 
 If values can be reused, then we can change the 7th line to:
 
-```python
+~~~ python
 if addup(tup, n ­- num):
-```
+~~~
 
 Since we don't remove any elements from `tup` in our recursive call, then we can reuse any element any number of times.
 {% endsolution %}

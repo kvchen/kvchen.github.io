@@ -7,17 +7,17 @@ layout: post
 
 Fill in the blanks (without using any numbers in the first blank!) to get the expected output.
 
-```python
+~~~python
 >>> (lambda x: lambda y: ________)(___)(lambda z: z*z)()
 9
-```
+~~~
 
 {% solution %}
 
-```python
+~~~python
 >>> (lambda x: lambda y: lambda: y(x))(3)(lambda z: z*z)()
 9
-```
+~~~
 
 {% endsolution %}
 {% endproblem %}
@@ -28,7 +28,7 @@ Fill in the blanks (without using any numbers in the first blank!) to get the ex
 
 Draw the environment diagram resulting from running the following code:
 
-```python
+~~~python
 x = 6
 def dread(pirate):
     x = 10
@@ -39,7 +39,7 @@ def dread(pirate):
     return roberts(x)
 
 dread(lambda spot: x + spot)
-```
+~~~
 
 {% solution %}
 {% environment %}
@@ -53,7 +53,7 @@ http://pythontutor.com/composingprograms.html#code=x+%3D+6%0Adef+dread(pirate%29
 
 Suppose we've already entered the following code into the Python interpreter:
 
-```python
+~~~python
 wild = 2
 
 def pig(out):
@@ -78,11 +78,11 @@ def hog(wild):
 
 def swine(hog):
     return hog(wild) + wild
-```
+~~~
 
 What would Python print for each of the following lines?
 
-```python
+~~~python
 >>> pig(3)
 
 >>> y = hog(7)
@@ -90,11 +90,11 @@ What would Python print for each of the following lines?
 >>> hog(swine(hog))
 
 >>> swine(pig)
-```
+~~~
 
 {% solution %}
 
-```python
+~~~python
 >>> pig(3)
 oink
 oink
@@ -119,7 +119,7 @@ Error
 squeal
 squeal
 34
-```
+~~~
 
 {% endsolution %}
 {% endproblem %}

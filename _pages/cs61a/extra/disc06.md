@@ -7,17 +7,17 @@ Here are some extra examples we went over in class that are important to know fo
 
 ### Inherited class variables
 
-```python
+~~~python
 >>> c.foo
 5
 >>> A.foo = 8
 >>> c.foo
 8
-```
+~~~
 
 ### Class variable and instance attribute precedence
 
-```python
+~~~python
 >>> a.foo = 9
 >>> c.foo
 5
@@ -26,11 +26,11 @@ Here are some extra examples we went over in class that are important to know fo
 9
 >>> A.foo
 5
-```
+~~~
 
 ### Binding methods to classes
 
-```python
+~~~python
 >>> c = C()
 >>> C.bar = lambda x: print(x)
 >>> c.bar("ayyy")
@@ -38,11 +38,11 @@ Error
 >>> C.bar = lambda self, x: print(x)
 >>> c.bar("lmao")
 lmao
-```
+~~~
 
 ### Binding methods to instances (not really!)
 
-```python
+~~~python
 >>> c0.bar = lambda self: print(self.foo)
 >>> c1.bar()
 Error
@@ -52,4 +52,4 @@ Error
 Error
 >>> c0.bar(c1)
 5
-```
+~~~

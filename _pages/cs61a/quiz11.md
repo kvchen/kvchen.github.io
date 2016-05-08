@@ -5,13 +5,13 @@ layout: post
 
 Download the `records` and `meetings` tables used in discussion [here](/cs61a/extra/disc11/disc11.sql). To load it into SQLite3, you should run the following command (in the same folder as `disc11.sql`):
 
-```bash
+~~~bash
 sqlite3 --init disc11.sql
-```
+~~~
 
 Now, you should be able to see what the table looks like:
 
-```sql
+~~~sql
 sqlite> .schema
 CREATE TABLE records(
   name,
@@ -21,14 +21,14 @@ CREATE TABLE records(
   supervisor
 );
 CREATE TABLE meetings(division, day, time);
-```
+~~~
 
 
 {% problem %}
 
 Write a recursive select statement to compute the powers of two from $2^0, 2^1, \cdots 2^{10}$. **Hint**: Be careful about your stopping condition!
 
-```sql
+~~~sql
 WITH twos(exp) AS (
   -- YOUR CODE HERE
 )
@@ -45,16 +45,16 @@ SELECT exp FROM twos;
 256
 512
 1024
-```
+~~~
 
 {% solution %}
-```sql
+~~~sql
 WITH twos(exp) AS (
   SELECT 1 UNION
   SELECT 2 * exp FROM twos WHERE exp < 1024
 )
 SELECT exp FROM twos;
-```
+~~~
 {% endsolution %}
 {% endproblem %}
 
@@ -63,7 +63,7 @@ SELECT exp FROM twos;
 
 Write a SQL statement that finds all perfect squares from 156 to 1145.
 
-```sql
+~~~sql
 CREATE TABLE squares AS
   WITH naturals(n) AS (
     SELECT __________ UNION
@@ -81,10 +81,10 @@ SELECT * FROM squares
 ...
 1024
 1089
-```
+~~~
 
 {% solution %}
-```sql
+~~~sql
 CREATE TABLE squares AS
   WITH naturals(n) AS (
     SELECT 1 UNION
@@ -95,7 +95,7 @@ CREATE TABLE squares AS
   SELECT b.n AS n
     FROM naturals AS a, naturals AS b
     WHERE a.n * a.n = b.n AND b.n > 156;
-```
+~~~
 {% endsolution %}
 {% endproblem %}
 
@@ -104,7 +104,7 @@ CREATE TABLE squares AS
 
 We can use SQL to determine the anagrams of a word! Specifically, let's use SQL to find the anagrams of the word `cats`.
 
-```sql
+~~~sql
 WITH given(char, weight) AS (
   SELECT 'c', 1 UNION
   SELECT 'a', 10 UNION
@@ -114,10 +114,10 @@ WITH given(char, weight) AS (
 SELECT ________________________________________
 FROM __________________________________________
 WHERE _________________________________________;
-```
+~~~
 
 {% solution %}
-```sql
+~~~sql
 WITH given(char, weight) AS (
   SELECT 'c', 1 UNION
   SELECT 'a', 10 UNION
@@ -127,6 +127,6 @@ WITH given(char, weight) AS (
 SELECT a.char || b.char || c.char || d.char
 FROM given AS a, given AS b, given AS c, given AS d
 WHERE a.weight + b.weight + c.weight + d.weight = 1111;
-```
+~~~
 {% endsolution %}
 {% endproblem %}

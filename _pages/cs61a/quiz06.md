@@ -9,7 +9,7 @@ There are some [extra examples](../extra/disc06/) not on the worksheet that we w
 
 Implement a class `LoopList` that has a method `at_index`. If `at_index` is called with an index that is too large, the `LoopList` will loop around back to the beginning.
 
-```python
+~~~ python
 class LoopList(object):
     """
     >>> x = LoopList([3, 1, 4])
@@ -17,11 +17,11 @@ class LoopList(object):
     [3, 1, 4, 3, 1, 4, 3, 1, 4, 3]
     """
     pass
-```
+~~~
 
 {% solution %}
 
-```python
+~~~ python
 class LoopList(object):
     """
     >>> x = LoopList([3, 1, 4])
@@ -33,7 +33,7 @@ class LoopList(object):
 
     def at_index(self, idx):
         return self.lst[idx % len(self.lst)]
-```
+~~~
 
 {% endsolution %}
 {% endproblem %}
@@ -44,7 +44,7 @@ class LoopList(object):
 
 Draw the environment diagram (this one's hard!).
 
-```python
+~~~ python
 def campa(nile):
     def ding(ding):
         nonlocal nile
@@ -53,7 +53,7 @@ def campa(nile):
     return nile(ding(1914)) + nile(1917)
 
 ring = campa(lambda nile: 100)
-```
+~~~
 
 {% solution %}
 

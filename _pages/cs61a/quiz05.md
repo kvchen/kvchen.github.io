@@ -9,7 +9,7 @@ layout: post
 
 Complete the implementation of `print_by_level`, which takes in a tree and prints each "level" of the tree in sequential order, as a series of lists. A level of a tree is defined as all the elements at the same depth from the root. Assume that you can use `branches(tree)` and `root(tree)`.
 
-```python
+~~~ python
 def print_by_level(t):
     """Prints each level of the tree as a list.
 
@@ -39,11 +39,11 @@ def print_by_level(t):
 
         print(shown_values)
         current_level, next_level = ____________, ____________
-```
+~~~
 
 {% solution %}
 
-```python
+~~~ python
 def print_by_level(t):
     """Prints each level of the tree as a list.
 
@@ -73,7 +73,7 @@ def print_by_level(t):
 
         print(shown_values)
         current_level, next_level = next_level, []
-```
+~~~
 
 {% endsolution %}
 {% endproblem %}
@@ -83,7 +83,7 @@ def print_by_level(t):
 {% problem %}
 Implement a function `running_total` that mutates a list of numbers such that the $i$th element is the sum of the first $i+1$ elements.
 
-```python
+~~~ python
 def running_total(lst):
     """Computes a running total over a list of numbers.
     >>> lst = [1, 2, 3]
@@ -92,11 +92,11 @@ def running_total(lst):
     [1, 3, 6]
     """
     return
-```
+~~~
 
 {% solution %}
 
-```python
+~~~ python
 def running_total(lst):
     """Computes a running total over a list of numbers.
     >>> lst = [1, 2, 3]
@@ -108,7 +108,7 @@ def running_total(lst):
     for i in range(len(lst)):
         total += lst[i]
         lst[i] = total
-```
+~~~
 
 {% endsolution %}
 {% endproblem %}
@@ -119,7 +119,7 @@ def running_total(lst):
 
 Draw the environment diagram.
 
-```python
+~~~ python
 def world(series):
     if len(series) % 2 == 0:
         series[0] = series[:2]
@@ -131,7 +131,7 @@ blue_jays = [1, 2, 3, 4]
 cardinals = world(blue_jays)
 cubs = world(blue_jays)
 royals = world(cubs)
-```
+~~~
 
 {% solution %}
 {% environment %}

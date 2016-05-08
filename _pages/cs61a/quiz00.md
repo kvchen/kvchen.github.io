@@ -38,15 +38,15 @@ There's a hallway with 100 closed lockers against the wall, lined up in a row. Y
 
 Expected value is defined as the average value of a series of outcomes, weighted by the probabilities of their occurrences. That is,
 
-{% math %}
+$$
 \mathbb{E}[X] = x_1p_1 + x_2p_2 + \cdots + x_np_n
-{% endmath %}
+$$
 
 For instance, the expected value of a dice roll is 3.5, since
 
-{% math %}
+$$
 \frac{1}{6}(1 + 2 + 3 + 4 + 5 + 6) = 3.5
-{% endmath %}
+$$
 
 Your TA walks up to you in section and asks if he can play a game of chance. Instead of calling him a scam and running away, you decide to hear him out. The rules are as follows:
 
