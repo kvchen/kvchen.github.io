@@ -1,35 +1,27 @@
 require 'cgi'
+require 'kramdown'
 require 'uri'
 
 
 module Jekyll
-  class SolutionBlockTag < Liquid::Tag
+  class SolutionBlock < Liquid::Block
     def render(context)
-      problem_num = context.environments.first['problem_num'] ||= 1
+      problem_num = context.environments.first['page']['problem_num'] ||= 1
       solution_toggle = "<a class=\"solution-toggle\" solution=\"#{ problem_num }\" href=\"#\">Toggle Solution</a>"
       solution_div = "<div class=\"solution\" id=\"#{ problem_num }\">"
 
-      "#{ solution_toggle } #{ solution_div }\n"
+      options = context.registers[:site].config['kramdown']
+      "#{ solution_toggle }\n#{ solution_div }" + Kramdown::Document.new(super, options).to_html + "</div>"
     end
   end
 
-  class SolutionBlockEndTag < Liquid::Tag
+  class ProblemBlock < Liquid::Block
     def render(context)
-      '</div>'
-    end
-  end
+      problem_num = context.environments.first['page']['problem_num'] ||= 1
+      context.environments.first['page']['problem_num'] += 1
 
-  class ProblemBlockTag < Liquid::Tag
-    def render(context)
-      problem_num = context.environments.first['problem_num'] ||= 1
-      context.environments.first['problem_num'] = problem_num + 1
-      "<h1>Question #{ problem_num.to_s }</h1>"
-    end
-  end
-
-  class ProblemBlockEndTag < Liquid::Tag
-    def render(context)
-      '<hr>'
+      options = context.registers[:site].config['kramdown']
+      "<h1>Question #{ problem_num.to_s }</h1>" + Kramdown::Document.new(super, options).to_html + "<hr>"
     end
   end
 
@@ -43,10 +35,7 @@ module Jekyll
   end
 end
 
+
 Liquid::Template.register_tag('environment', Jekyll::EnvironmentDiagram)
-
-Liquid::Template.register_tag('problem', Jekyll::ProblemBlockTag)
-Liquid::Template.register_tag('endproblem', Jekyll::ProblemBlockEndTag)
-
-Liquid::Template.register_tag('solution', Jekyll::SolutionBlockTag)
-Liquid::Template.register_tag('endsolution', Jekyll::SolutionBlockEndTag)
+Liquid::Template.register_tag('problem', Jekyll::ProblemBlock)
+Liquid::Template.register_tag('solution', Jekyll::SolutionBlock)
