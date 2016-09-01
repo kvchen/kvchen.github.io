@@ -13,7 +13,7 @@ items:
 # Info
 
 * **Course Website**: [http://www-inst.cs.berkeley.edu/~cs161/fa16/](http://www-inst.cs.berkeley.edu/~cs161/fa16/)
-* **Section Time**: TBD
+* **Section Time**: Soda 320, Wed 5-6P
 * **Office Hours**: TBD
 
 

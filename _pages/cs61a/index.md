@@ -8,15 +8,18 @@ items:
   - title: Quiz 0
     description: Lost on the Moon
     url: /cs61a/quiz00/
+  - title: Quiz 1
+    description: Control and Environments
+    url: /cs61a/quiz01/
 ---
 
 # Info
 
 * **Course Website**: [http://cs61a.org](http://cs61a.org)
 * **Section Times**:
-  * **Lab**: Soda 277, Tue 9:30-11
-  * **Discussion**: Soda 405, Thu 9:30-11
-* **Office Hours**: 109 Morgan Hall, Fri 1-2
+  * **Lab**: Soda 277, Tue 9:30-11A
+  * **Discussion**: Soda 405, Thu 9:30-11A
+* **Office Hours**: 109 Morgan Hall, Fri 1-2P
 
 
 # Contact

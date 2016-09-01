@@ -1,7 +1,11 @@
 ---
 title: Discussion 1 Quiz
+description: Control and Environments
 layout: post
 ---
+
+[Discussion Attendance](https://goo.gl/forms/lsTtZzrJwMCGUcA12)
+
 
 {% problem %}
 
@@ -12,6 +16,7 @@ Are these primitive expressions or call expressions?
 * `print(5)`
 * `3 + 4`
 
+<!--
 {% solution %}
 
 * 3 is a number (primitive expression)
@@ -28,6 +33,7 @@ The last one's tricky! Try typing these two into a Python interpreter to convinc
 7
 ~~~
 {% endsolution %}
+-->
 {% endproblem %}
 
 
@@ -36,11 +42,13 @@ The last one's tricky! Try typing these two into a Python interpreter to convinc
 
 When do we make a new frame in an environment diagram?
 
+<!--
 {% solution %}
 
 We make a new frame whenever we call a _user-defined_ function. This means we don't create frames for builtin function calls like `abs(x)` and `3 + 4`. We also don't create frames for imported functions!
 
 {% endsolution %}
+-->
 {% endproblem %}
 
 
@@ -58,11 +66,13 @@ a = swap(x, y)
 swap(a, y)
 ~~~
 
+<!--
 {% solution %}
 {% environment %}
 http://pythontutor.com/composingprograms.html#code=def+swap(x,+y%29%3A%0A++++x,+y+%3D+y,+x%0A++++return+print('Swapped!',+x,+y%29%0A%0Ax,+y+%3D+60,+1%0Aa+%3D+swap(x,+y%29%0Aswap(a,+y%29&mode=display&origin=composingprograms.js&cumulative=true&py=3&rawInputLstJSON=%5B%5D&curInstr=0
 {% endenvironment %}
 {% endsolution %}
+-->
 {% endproblem %}
 
 
