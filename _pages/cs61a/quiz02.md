@@ -12,14 +12,14 @@ Fill in the blanks (without using any numbers in the first blank!) to get the ex
 9
 ~~~
 
-{% solution %}
+<!-- {% solution %}
 
 ~~~python
 >>> (lambda x: lambda y: lambda: y(x))(3)(lambda z: z*z)()
 9
 ~~~
 
-{% endsolution %}
+{% endsolution %} -->
 {% endproblem %}
 
 
@@ -41,11 +41,11 @@ def dread(pirate):
 dread(lambda spot: x + spot)
 ~~~
 
-{% solution %}
+<!-- {% solution %}
 {% environment %}
 http://pythontutor.com/composingprograms.html#code=x+%3D+6%0Adef+dread(pirate%29%3A%0A++++x+%3D+10%0A++++def+roberts(westley%29%3A%0A++++++++x+%3D+2000%0A++++++++return+westley+%2B+pirate(x%29%0A%0A++++return+roberts(x%29%0A%0Adread(lambda+spot%3A+x+%2B+spot%29&mode=display&origin=composingprograms.js&cumulative=true&py=3&rawInputLstJSON=%5B%5D&curInstr=15
 {% endenvironment %}
-{% endsolution %}
+{% endsolution %} -->
 {% endproblem %}
 
 
@@ -92,7 +92,7 @@ What would Python print for each of the following lines?
 >>> swine(pig)
 ~~~
 
-{% solution %}
+<!-- {% solution %}
 
 ~~~python
 >>> pig(3)
@@ -121,5 +121,5 @@ squeal
 34
 ~~~
 
-{% endsolution %}
+{% endsolution %} -->
 {% endproblem %}

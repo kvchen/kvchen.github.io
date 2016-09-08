@@ -8,6 +8,9 @@ items:
   - title: Discussion 1
     description: GDB and x86 assembly
     url: /cs161/disc01/
+  - title: Discussion 2
+    description: Buffer Overflow Mitigations
+    url: /cs161/disc02/
 ---
 
 # Info

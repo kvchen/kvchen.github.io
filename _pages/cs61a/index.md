@@ -11,6 +11,9 @@ items:
   - title: Quiz 1
     description: Control and Environments
     url: /cs61a/quiz01/
+  - title: Quiz 2
+    description: Environment Diagrams and Recursion
+    url: /cs61a/quiz02/
 ---
 
 # Info
