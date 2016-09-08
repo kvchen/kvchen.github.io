@@ -3,6 +3,8 @@ title: Discussion 2 Quiz
 layout: post
 ---
 
+[Discussion attendance](https://goo.gl/forms/kyB5keY2cR1UWTBs2)
+
 {% problem %}
 
 Fill in the blanks (without using any numbers in the first blank!) to get the expected output.
