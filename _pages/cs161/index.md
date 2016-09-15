@@ -11,13 +11,16 @@ items:
   - title: Discussion 2
     description: Buffer Overflow Mitigations
     url: /cs161/disc02/
+  - title: Discussion 3
+    description: Sandboxes
+    url: /cs161/disc03/
 ---
 
 # Info
 
 * **Course Website**: [http://www-inst.cs.berkeley.edu/~cs161/fa16/](http://www-inst.cs.berkeley.edu/~cs161/fa16/)
 * **Section Time**: Soda 320, Wed 5-6P
-* **Office Hours**: TBD
+* **Office Hours**: Soda 283E, F 5-6P
 
 
 # Contact
