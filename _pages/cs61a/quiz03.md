@@ -27,8 +27,8 @@ rev = reverse(l)
 {% environment %}
 http://pythontutor.com/composingprograms.html#code=def+reverse(lst%29%3A%0A++++if+len(lst%29+%3C%3D+1%3A%0A++++++++return+lst%0A++++return+reverse(lst%5B1%3A%5D%29+%2B+%5Blst%5B0%5D%5D%0A%0Al+%3D+%5B1,+%5B2,+3%5D,+4%5D%0Arev+%3D+reverse(l%29&mode=display&origin=composingprograms.js&cumulative=true&py=3&rawInputLstJSON=%5B%5D&curInstr=0
 {% endenvironment %}
-{% endsolution %}
-{% endproblem %} -->
+{% endsolution %} -->
+{% endproblem %}
 
 
 
