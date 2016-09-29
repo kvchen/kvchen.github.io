@@ -5,8 +5,6 @@ layout: post
 
 **Note**: If you wish to meet with me one on one to discuss the course, please shoot me an email with your available times. My email can be found on the [course info page](/cs61a/).
 
-[Discussion attendence](https://goo.gl/forms/mx43UiC8SiC697sP2)
-
 {% problem %}
 
 Draw the environment diagram.

@@ -17,6 +17,9 @@ items:
   - title: Quiz 3
     description: Trees and Sequences
     url: /cs61a/quiz03/
+  - title: Quiz 4
+    description: Growth and Nonlocals
+    url: /cs61a/quiz04/
 ---
 
 # Info
