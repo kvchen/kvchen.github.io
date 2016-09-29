@@ -5,6 +5,7 @@ layout: post
 
 [Discussion attendance](https://goo.gl/forms/iGXkFJCwVt8Kzgbt1)
 
+{% problem %}
 Complete the implementation of `print_by_level`, which takes in a tree and prints each "level" of the tree in sequential order, as a series of lists. A level of a tree is defined as all the elements at the same depth from the root. Assume that you can use `branches(tree)` and `root(tree)`.
 
 ~~~ python
