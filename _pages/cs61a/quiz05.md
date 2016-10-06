@@ -3,8 +3,6 @@ title: Discussion 5 Quiz
 layout: post
 ---
 
-[Discussion attendance](https://goo.gl/forms/DGZ5EM8BOQuVQ0o22)
-
 {% problem %}
 
 Implement a class `LoopList` that has a method `at_index`. If `at_index` is called with an index that is too large, the `LoopList` will loop around back to the beginning.
