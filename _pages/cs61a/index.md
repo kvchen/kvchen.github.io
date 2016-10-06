@@ -20,6 +20,9 @@ items:
   - title: Quiz 4
     description: Growth and Nonlocals
     url: /cs61a/quiz04/
+  - title: Quiz 5
+    description: Object Oriented Programming
+    url: /cs61a/quiz05/
 ---
 
 # Info
