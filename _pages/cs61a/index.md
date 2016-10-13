@@ -23,6 +23,9 @@ items:
   - title: Quiz 5
     description: Object Oriented Programming
     url: /cs61a/quiz05/
+  - title: Quiz 6
+    description: Linked Lists and Midterm Review
+    url: /cs61a/quiz06/
 ---
 
 # Info
