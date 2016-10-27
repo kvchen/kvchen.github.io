@@ -3,124 +3,98 @@ title: Discussion 7 Quiz
 layout: post
 ---
 
+[Discussion attendance](https://goo.gl/forms/jsLGdECLJ5EAsG8Y2)
+
 {% problem %}
 
-One of your favorite problems on the midterm was `count_groupings`, which asked you to write an algorithm to figure out the number of ways to group terms together in a multiplicative sequence. Here's a brief refresher of how it worked:
+Draw the box-and-pointer diagrams for each of the following:
 
-~~~ python
-def count_groupings(n):
-    """For N >= 1, the number of distinct parenthesizations of a product of N
-    items.
+~~~scheme
+'(1 . (2 . (3)))
 
-    >>> count_groupings (1)
-    1
-    >>> count_groupings (2)
-    1
-    >>> count_groupings (3)
-    2
-    >>> count_groupings (4)
-    5
-    >>> count_groupings (5)
-    14
-    """
-    if n == 1:
-        return 1
+'(1 2 . 3)
 
-    total = 0
-    i = 1
+'(1 . 2 . 3)
 
-    while i < n:
-        total += count_groupings (i) * count_groupings (n - i)
-        i += 1
+(cons 1 '(list 2 3))
 
-    return total
+(list (append '(1) '(2) nil) 3)
+
+(list 3 '(1 4 . 1) (cons (list 5 9) 2) 6)
 ~~~
 
-What's the runtime of this algorithm?
-
-{% solution %}
-
-**Note**: This question is more advanced that what we'd ask you on an exam. If you're interested in further runtime analysis, you can check out [the Master theorem](https://en.wikipedia.org/wiki/Master_theorem), which makes it simple to analyze runtimes for recursive algorithms.
-
-Let's denote the `count_groupings` algorithm by a function $C(n)$. We can represent the number of recursive calls resulting from calling $C(n)$ by a different function $T(n)$.
-
-$$ T(n) = 2(n-1) + 2(T(1) + T(2) + \ldots + T(n-1)) $$
-
-Using the same logic, we see that
-
-$$ T(n+1) = 2n + 2(T(1) + T(2) + \ldots + T(n-1) + T(n)) $$
-
-Subtracting these two equations, we get:
-
-$$ T(n+1) - T(n) = 2 + 2T(n) $$
-
-Rewriting and simplifying this equation, we get the recursive equation:
-
-$$ T(n+1) = 2 + 3T(n) $$
-
-By adding one to both sides and repeatedly applying this expansion, we notice a pattern:
-
-$$\begin{aligned}
-T(n+1) + 1 &= 3(T(n) + 1) \\
-           &= 9(T(n-2) + 1) \\
-           &= 27(T(n-3) + 1) \\
-           &= \cdots \\
-           &= 3^{n-1}(T(2) + 1) \\
-\end{aligned}$$
-
-By plugging in $T(2) = 2$ and $n-1$ as $n$, we have our final expression:
-
-$$ T(n) = 3^{n-1} - 1 \in \mathcal{O}(3^n) $$
-
-**Aside**: This is actually a very famous series known as the [Catalan numbers](https://en.wikipedia.org/wiki/Catalan_number). Like the Fibonacci sequence, there is a closed-form solution that can yield a given number in the sequence without having to calculate the previous ones.
-
-{% endsolution %}
 {% endproblem %}
 
 
 
 {% problem %}
 
-Draw the box-and-pointer diagram for the linked list `link` after the following code is executed.
+Write a function `take` that takes in a list `s` and a positive number `n`, and returns a list `t` such that `(car t)` is the first `n` elements of `s` and `(cdr t)` is the remaining elements of `s`. If `n` is greater than the length of `s`, `(car t)` should be `s` and `(cdr t)` should be `nil`.
 
-~~~ python
->>> link = Link(0)
->>> for i in range(1, 3):
-...     link = Link(i, Link(link, link))
-...
->>> link.rest.rest.rest = link.rest
+~~~scheme
+(define (take s n)
+  'YOUR-CODE-HERE
+)
 ~~~
 
-{% solution %}
-{% img cs61a/quiz07_q2 magick:third %}
-{% endsolution %}
+~~~scheme
+scm> (define a (take '(1 2 3) 2))
+scm> (car a)
+(1 2)
+scm> (cdr a)
+(3)
+scm> (define b (take '(1 2 3) 4))  ; when n > (length s)
+scm> (car b)
+(1 2 3)
+scm> (cdr b)
+()
+~~~
+
+<!-- {% solution %}
+
+~~~scheme
+(define (take s n)
+  (cond ((= n 0) (cons nil s))
+        ((null ? s ) ( cons s nil ))
+        (else
+          (let ((rec (take (cdr s) (- n 1))))
+            (cons (cons (car s) (car rec)) (cdr rec))))))
+~~~
+
+{% endsolution %} -->
 {% endproblem %}
 
 
 
 {% problem %}
 
-Write a function `all_paths` that takes in a `Tree` and returns a list of paths from the root to leaves. Each path is represented as a `Link`.
+Write a function to slice a list in Scheme as you would a list in Python, starting at the `start` index and ending one before the `end` index. Assume that the step size is 1, and `start` and `end` are both non-negative.
 
-~~~ python
-def all_paths(tree):
-    pass    
+~~~scheme
+(define (slice lst start end)
+  'YOUR-CODE-HERE
+)
 ~~~
 
-{% solution %}
-
-~~~ python
-def all_paths(tree):
-    if tree.is_leaf():
-        return [Link(tree.label)]
-
-    result = []
-    for branch in tree.branches:
-        result += [Link(tree.label, path)
-                   for path in all_paths(branch)]
-
-    return result
+~~~scheme
+scm> (define a '(3 1 4 1 5 9))
+scm> (slice a 2 5)
+(4 1 5)
+scm> (slice a 10 3)
+()
+scm> (slice a 1 100)
+(1 4 1 5 9)
 ~~~
 
-{% endsolution %}
+**Bonus challenge**: Write the same `slice` procedure that also accepts a `step` argument, along with negative values of `start` and `end`!
+
+<!-- {% solution %}
+~~~scheme
+(define (slice lst start end)
+  (cond ((or (<= end 0) (null? lst)) nil)
+        ((> start 0) (slice (cdr lst) (- start 1) (- end 1)))
+        (else (cons (car lst) (slice (cdr lst) (- start 1) (- end 1))))))
+~~~
+{% endsolution %} -->
+
 {% endproblem %}

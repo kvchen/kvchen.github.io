@@ -26,6 +26,9 @@ items:
   - title: Quiz 6
     description: Linked Lists and Midterm Review
     url: /cs61a/quiz06/
+  - title: Quiz 7
+    description: Scheme
+    url: /cs61a/quiz07/
 ---
 
 # Info
