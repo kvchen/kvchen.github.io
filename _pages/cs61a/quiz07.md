@@ -3,8 +3,6 @@ title: Discussion 7 Quiz
 layout: post
 ---
 
-[Discussion attendance](https://goo.gl/forms/jsLGdECLJ5EAsG8Y2)
-
 {% problem %}
 
 Draw the box-and-pointer diagrams for each of the following:
@@ -50,7 +48,7 @@ scm> (cdr b)
 ()
 ~~~
 
-<!-- {% solution %}
+{% solution %}
 
 ~~~scheme
 (define (take s n)
@@ -61,7 +59,7 @@ scm> (cdr b)
             (cons (cons (car s) (car rec)) (cdr rec))))))
 ~~~
 
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
 
 
@@ -88,13 +86,12 @@ scm> (slice a 1 100)
 
 **Bonus challenge**: Write the same `slice` procedure that also accepts a `step` argument, along with negative values of `start` and `end`!
 
-<!-- {% solution %}
+{% solution %}
 ~~~scheme
 (define (slice lst start end)
   (cond ((or (<= end 0) (null? lst)) nil)
         ((> start 0) (slice (cdr lst) (- start 1) (- end 1)))
         (else (cons (car lst) (slice (cdr lst) (- start 1) (- end 1))))))
 ~~~
-{% endsolution %} -->
-
+{% endsolution %}
 {% endproblem %}
