@@ -3,98 +3,91 @@ title: Discussion 8 Quiz
 layout: post
 ---
 
-[Discussion 8 Warmup](../warmup08/)
+[Discussion Attendance](https://goo.gl/forms/jGtg0fwyKL7hXWB93)
 
 {% problem %}
 
-Draw the box-and-pointer diagrams for each of the following:
+Write a tail-recursive procedure `binary-to-decimal` that converts a list `bits` of zeros and ones into the corresponding base-10 number. **Hint**: Use a helper procedure! Is there an easier way to do it than starting at the end of the list?
 
 ~~~scheme
-'(1 . (2 . (3)))
-
-'(1 2 . 3)
-
-'(1 . 2 . 3)
-
-(cons 1 '(list 2 3))
-
-(list (append '(1) '(2) nil) 3)
-
-(list 3 '(1 4 . 1) (cons (list 5 9) 2) 6)
+(define (binary-to-decimal bits)
+  'YOUR-CODE-HERE
+)
 ~~~
 
+~~~scheme
+scm> (binary-to-decimal '())
+0
+scm> (binary-to-decimal '(1 0 1))        ; 4 + 1
+5
+scm> (binary-to-decimal '(1 1 1 1 0 1))  ; 32 + 16 + 8 + 4 + 1
+61
+~~~
+
+<!-- {% solution %}
+
+~~~scheme
+(define (binary-to-decimal bits)
+  (define (helper bits sofar)
+    (if (null? bits)
+        sofar
+        (helper (cdr bits)
+                (+ (* 2 sofar) (car bits)))))
+  (helper bits 0))
+~~~
+
+{% endsolution %} -->
 {% endproblem %}
 
 
 
 {% problem %}
 
-Write a function `take` that takes in a list `s` and a positive number `n`, and returns a list `t` such that `(car t)` is the first `n` elements of `s` and `(cdr t)` is the remaining elements of `s`. If `n` is greater than the length of `s`, `(car t)` should be `s` and `(cdr t)` should be `nil`.
+Fill in the blanks for the function `matched_up`, which takes in a string `parens` and checks if all the open parentheses are properly matched with closing parentheses. **Hint**: use `stack.pop` and `stack.append`.
 
-~~~scheme
-(define (take s n)
-  'YOUR-CODE-HERE
-)
+~~~python
+def matched_up(parens):
+    """Checks that all the parentheses in a string are matched up properly.
+
+    >>> matched_up("()")
+    True
+    >>> matched_up("(()())")
+    True
+    >>> matched_up("()((")
+    False
+    >>> matched_up("()()")
+    True
+    >>> matched_up(")())")
+    False
+    """
+    stack = []
+
+    for c in parens:
+        if c == '(':
+            _____________________
+        elif c == ')':
+            if _____________________ or _____________________:
+                return False
+
+    return _____________________
 ~~~
 
-~~~scheme
-scm> (define a (take '(1 2 3) 2))
-scm> (car a)
-(1 2)
-scm> (cdr a)
-(3)
-scm> (define b (take '(1 2 3) 4))  ; when n > (length s)
-scm> (car b)
-(1 2 3)
-scm> (cdr b)
-()
+<!-- {% solution %}
+
+~~~python
+def matched_up(parens):
+    """Checks that all the parentheses in a string are matched up properly."""
+    stack = []
+
+    for c in parens:
+        if c == '(':
+            stack.append(c)
+        elif c == ')':
+            if not stack or stack.pop() != '(':
+                return False
+
+    return len(stack) == 0
 ~~~
 
-{% solution %}
-
-~~~scheme
-(define (take s n)
-  (cond ((= n 0) (cons nil s))
-        ((null ? s ) ( cons s nil ))
-        (else
-          (let ((rec (take (cdr s) (- n 1))))
-            (cons (cons (car s) (car rec)) (cdr rec))))))
-~~~
-
-{% endsolution %}
-{% endproblem %}
-
-
-
-{% problem %}
-
-Write a function to slice a list in Scheme as you would a list in Python, starting at the `start` index and ending one before the `end` index. Assume that the step size is 1, and `start` and `end` are both non-negative.
-
-~~~scheme
-(define (slice lst start end)
-  'YOUR-CODE-HERE
-)
-~~~
-
-~~~scheme
-scm> (define a '(3 1 4 1 5 9))
-scm> (slice a 2 5)
-(4 1 5)
-scm> (slice a 10 3)
-()
-scm> (slice a 1 100)
-(1 4 1 5 9)
-~~~
-
-**Bonus challenge**: Write the same `slice` procedure that also accepts a `step` argument, along with negative values of `start` and `end`!
-
-{% solution %}
-~~~scheme
-(define (slice lst start end)
-  (cond ((or (<= end 0) (null? lst)) nil)
-        ((> start 0) (slice (cdr lst) (- start 1) (- end 1)))
-        (else (cons (car lst) (slice (cdr lst) (- start 1) (- end 1))))))
-~~~
-{% endsolution %}
-
+{% endsolution %} -->
 {% endproblem %}

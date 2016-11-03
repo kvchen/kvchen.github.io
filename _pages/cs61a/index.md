@@ -29,6 +29,9 @@ items:
   - title: Quiz 7
     description: Scheme
     url: /cs61a/quiz07/
+  - title: Quiz 8
+    description: Interpreters
+    url: /cs61a/quiz08/
 ---
 
 # Info
