@@ -1,97 +1,108 @@
 ---
-title: Discussion 9 Quiz
+title: Discussion 10 Quiz
 layout: post
 ---
 
-Here are the two files that we used today in discussion, typed out for your convenience.
-
-[pair.py](../extra/disc09/pair.py)
-
-[calculator.py](../extra/disc09/calculator.py)
+[Discussion attendance](https://goo.gl/forms/Fp9qWuHjpx2WrzrV2)
 
 {% problem %}
 
-Write a tail-recursive procedure `binary-to-decimal` that converts a list `bits` of zeros and ones into the corresponding base-10 number. **Hint**: Use a helper procedure! Is there an easier way to do it than starting at the end of the list?
+Earlier in the semester, we defined the `Tree` class, which contains a `label` and multiple branches leading to its `children`. Here's the class for reference:
 
-~~~scheme
-(define (binary-to-decimal bits)
-  'YOUR-CODE-HERE
-)
+~~~python
+class Tree:
+    def __init__(self, label, children=()):
+        self.label = label
+        for branch in children:
+            assert isinstance(branch, Tree)
+        self.children = list(children)
+
+    def is_leaf(self):
+        return not self.children
 ~~~
 
-~~~scheme
-scm> (binary-to-decimal '())
-0
-scm> (binary-to-decimal '(1 0 1))        ; 4 + 1
-5
-scm> (binary-to-decimal '(1 1 1 1 0 1))  ; 32 + 16 + 8 + 4 + 1
-61
+We wish to make these trees iterable, and display each label of the tree in _preorder_ traversal. That is, we iterate over the label of a tree before the labels of any of its children. We also iterate over each child in the order presented in the `children`.
+
+1. What are the new method(s) you need to add in order to make these trees iterable?
+2. Write out the code for these new method(s).
+
+<!-- {% solution %}
+
+One solution is to use a generator in our `__iter__` method:
+
+~~~python
+class Tree:
+    def __iter__(self):
+        yield self.label
+
+        for child in self.children:
+            for label in child:
+                yield label
 ~~~
-
-{% solution %}
-
-~~~scheme
-(define (binary-to-decimal bits)
-  (define (helper bits sofar)
-    (if (null? bits)
-        sofar
-        (helper (cdr bits)
-                (+ (* 2 sofar) (car bits)))))
-  (helper bits 0))
-~~~
-
-{% endsolution %}
+{% endsolution %} -->
 {% endproblem %}
 
 
-
 {% problem %}
 
-Fill in the blanks for the function `matched_up`, which takes in a string `parens` and checks if all the open parentheses are properly matched with closing parentheses. **Hint**: use `stack.pop` and `stack.append`.
+What are the first four values of the stream `s`?
 
-~~~python
-def matched_up(parens):
-    """Checks that all the parentheses in a string are matched up properly.
+~~~scheme
+(define (sweet dreams)
+  (cons-stream (list dreams) (sweet (list dreams))))
 
-    >>> matched_up("()")
-    True
-    >>> matched_up("(()())")
-    True
-    >>> matched_up("()((")
-    False
-    >>> matched_up("()()")
-    True
-    >>> matched_up(")())")
-    False
-    """
-    stack = []
+(define (mix tape)
+  (cons-stream
+    (car (car tape))
+    (mix (append (match cdr-stream (cdr tape))
+                 (list (cdr-stream (car tape)))))))
 
-    for c in parens:
-        if c == '(':
-            _____________________
-        elif c == ')':
-            if _____________________ or _____________________:
-                return False
+(define (match dot com)
+  (if (null? com) nil
+      (cons (dot (car com)) (match dot (cdr com)))))
 
-    return _____________________
+(define s (mix (match sweet '(1 2 3))))
 ~~~
 
-{% solution %}
+<!-- {% solution %}
+The key here is to think about the purpose of `sweet` and `match`:
 
-~~~python
-def matched_up(parens):
-    """Checks that all the parentheses in a string are matched up properly."""
-    stack = []
+`sweet`: This returns a stream of lists, with each next element enclosed in one more set of parentheses.
 
-    for c in parens:
-        if c == '(':
-            stack.append(c)
-        elif c == ')':
-            if not stack or stack.pop() != '(':
-                return False
+`match`: This is basically the `map` procedure in disguise. We're taking the procedure `dot` and applying it to every element in the list `com`.
 
-    return len(stack) == 0
+`mix`: Takes a list of streams `tape` as input. It pulls the first element from the first stream, then moves the first stream to the end of the list. Finally, it moves every stream in the list forward
+
+Deciphering the final line, we first look at the innermost expression:
+
+~~~scheme
+(match sweet '(1 2 3))
 ~~~
 
-{% endsolution %}
+Here, we're just mapping the procedure `sweet` over the list `(1 2 3)`. This gives us back a list of three infinite streams - here's the first one:
+
+~~~scheme
+[0]: (1)
+[1]: ((1))
+[2]: (((1)))
+[3]: ((((1))))
+...
+~~~
+
+The other two streams look the same, but with the numbers `2` and `3` instead.
+
+~~~scheme
+(((1) . #[delayed]) ((2) . #[delayed]) ((3) . #[delayed]))
+~~~
+
+So far so good! Now that we know what `mix` does, we can apply it to this list of streams to get the first four elements of our new stream `s`:
+
+~~~scheme
+[0]: (1)
+[1]: ((2))
+[2]: (((3)))
+[3]: ((((1))))
+...
+~~~
+{% endsolution %} -->
 {% endproblem %}

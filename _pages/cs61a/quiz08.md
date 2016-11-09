@@ -3,8 +3,6 @@ title: Discussion 8 Quiz
 layout: post
 ---
 
-[Discussion Attendance](https://goo.gl/forms/jGtg0fwyKL7hXWB93)
-
 {% problem %}
 
 Write a tail-recursive procedure `binary-to-decimal` that converts a list `bits` of zeros and ones into the corresponding base-10 number. **Hint**: Use a helper procedure! Is there an easier way to do it than starting at the end of the list?
@@ -24,7 +22,7 @@ scm> (binary-to-decimal '(1 1 1 1 0 1))  ; 32 + 16 + 8 + 4 + 1
 61
 ~~~
 
-<!-- {% solution %}
+{% solution %}
 
 ~~~scheme
 (define (binary-to-decimal bits)
@@ -36,7 +34,7 @@ scm> (binary-to-decimal '(1 1 1 1 0 1))  ; 32 + 16 + 8 + 4 + 1
   (helper bits 0))
 ~~~
 
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
 
 
@@ -72,7 +70,7 @@ def matched_up(parens):
     return _____________________
 ~~~
 
-<!-- {% solution %}
+{% solution %}
 
 ~~~python
 def matched_up(parens):
@@ -89,5 +87,5 @@ def matched_up(parens):
     return len(stack) == 0
 ~~~
 
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}

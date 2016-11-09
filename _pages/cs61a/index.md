@@ -32,6 +32,9 @@ items:
   - title: Quiz 8
     description: Interpreters
     url: /cs61a/quiz08/
+  - title: Quiz 9
+    description: Delayed Expressions
+    url: /cs61a/quiz09/
 ---
 
 # Info
