@@ -3,8 +3,6 @@ title: Discussion 10 Quiz
 layout: post
 ---
 
-[Discussion attendance](https://goo.gl/forms/Fp9qWuHjpx2WrzrV2)
-
 {% problem %}
 
 Earlier in the semester, we defined the `Tree` class, which contains a `label` and multiple branches leading to its `children`. Here's the class for reference:
@@ -26,7 +24,7 @@ We wish to make these trees iterable, and display each label of the tree in _pre
 1. What are the new method(s) you need to add in order to make these trees iterable?
 2. Write out the code for these new method(s).
 
-<!-- {% solution %}
+{% solution %}
 
 One solution is to use a generator in our `__iter__` method:
 
@@ -39,7 +37,7 @@ class Tree:
             for label in child:
                 yield label
 ~~~
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
 
 
@@ -64,7 +62,7 @@ What are the first four values of the stream `s`?
 (define s (mix (match sweet '(1 2 3))))
 ~~~
 
-<!-- {% solution %}
+{% solution %}
 The key here is to think about the purpose of `sweet` and `match`:
 
 `sweet`: This returns a stream of lists, with each next element enclosed in one more set of parentheses.
@@ -104,5 +102,5 @@ So far so good! Now that we know what `mix` does, we can apply it to this list o
 [3]: ((((1))))
 ...
 ~~~
-{% endsolution %} -->
+{% endsolution %}
 {% endproblem %}
