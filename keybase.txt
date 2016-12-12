@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/kevinchen
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://keff.me
+  * I am kevinchen (https://keybase.io/kevinchen) on keybase.
+  * I have a public key ASDOJ1rzklOEGkN0LP1t-vGd2Q3dQfON2di2vhNrDybITQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120ce275af39253841a43742cfd6dfaf19dd90ddd41f38dd9d8b6be136b0f26c84d0a",
+            "host": "keybase.io",
+            "kid": "0120ce275af39253841a43742cfd6dfaf19dd90ddd41f38dd9d8b6be136b0f26c84d0a",
+            "uid": "0bb38d2a1d1b07086e85cdb156ceb719",
+            "username": "kevinchen"
+        },
+        "service": {
+            "hostname": "keff.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1481539577,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1481539553,
+        "hash": "d3edde855efde493bb7d76310a6fbfd6e1d9490271a0c484c6f9fe6ed12fa5be0e89a8af5262e5978710120417201b6fcb8648c80af37dc350573cd59855cfdf",
+        "seqno": 757231
+    },
+    "prev": "2d9e38806e90ca356f9f3b07a6d3ac98ef37d5c03ad69f89e75c5e42475aeb56",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgzida85JThBpDdCz9bfrxndkN3UHzjdnYtr4Taw8myE0Kp3BheWxvYWTFAu97ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwY2UyNzVhZjM5MjUzODQxYTQzNzQyY2ZkNmRmYWYxOWRkOTBkZGQ0MWYzOGRkOWQ4YjZiZTEzNmIwZjI2Yzg0ZDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwY2UyNzVhZjM5MjUzODQxYTQzNzQyY2ZkNmRmYWYxOWRkOTBkZGQ0MWYzOGRkOWQ4YjZiZTEzNmIwZjI2Yzg0ZDBhIiwidWlkIjoiMGJiMzhkMmExZDFiMDcwODZlODVjZGIxNTZjZWI3MTkiLCJ1c2VybmFtZSI6ImtldmluY2hlbiJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoia2VmZi5tZSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTgifSwiY3RpbWUiOjE0ODE1Mzk1NzcsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ4MTUzOTU1MywiaGFzaCI6ImQzZWRkZTg1NWVmZGU0OTNiYjdkNzYzMTBhNmZiZmQ2ZTFkOTQ5MDI3MWEwYzQ4NGM2ZjlmZTZlZDEyZmE1YmUwZTg5YThhZjUyNjJlNTk3ODcxMDEyMDQxNzIwMWI2ZmNiODY0OGM4MGFmMzdkYzM1MDU3M2NkNTk4NTVjZmRmIiwic2Vxbm8iOjc1NzIzMX0sInByZXYiOiIyZDllMzg4MDZlOTBjYTM1NmY5ZjNiMDdhNmQzYWM5OGVmMzdkNWMwM2FkNjlmODllNzVjNWU0MjQ3NWFlYjU2Iiwic2Vxbm8iOjcsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA/9/hynicbu7kNe5BCq/d3Jfil3n1un59a8wvQEPToKPIXCxyP9d/RVXVlj0D8tlybp77HskpD2QqeXI8pEC4AqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIcXBE+C/9w8mOzbZEOKCGnSwBlUqj+a5A+q/Lc84z3jo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kevinchen
+
+==================================================================
