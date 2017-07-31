@@ -1,40 +1,19 @@
-title: keff.me
-description: a coding blog
+title: keff
+description: breaking and building
 url: http://localhost:4000
 permalink: /:year/:month/:day/:title/
 relative_permalinks: false
 encoding: utf-8
 
-
 # Owner/author information
 
-owner:
-  name: Kevin Chen
-  email: kvchen@berkeley.edu
-social:
-  github: https://github.com/kvchen
-  facebook: https://www.facebook.com/keffcat
-  google_plus: https://plus.google.com/+KevinChen0/posts
-  linkedin: http://www.linkedin.com/pub/kevin-chen/70/b70/836
-
-
-# Analytics and webmaster tools stuff goes here
+author:
+  fullname: Kevin Chen
+  facebook: keffcat
+  github: kvchen
+  keybase: kevinchen
 
 google_analytics: UA-42434200-1
-
-
-# Links to include in top navigation
-
-links:
-  - title: About
-    url: /
-  # - title: Blog
-  # - title: Projects
-  #   url: /projects/
-  - title: CS61A
-    url: /cs61a/
-  - title: CS161
-    url: /cs161/
 
 
 # Logistics

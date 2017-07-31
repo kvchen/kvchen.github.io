@@ -3,11 +3,9 @@ source 'https://rubygems.org'
 gem 'jekyll'
 gem 'jekyll-assets'
 gem 'jekyll-contentblocks'
-
-gem 'coffee-script'
-gem 'gemoji'
 gem 'jekyll-asciinema'
-gem 'jemoji'
+
+gem 'mini_magick'
 gem 'pygments.rb'
 gem 'redcarpet'
 gem 'rouge'

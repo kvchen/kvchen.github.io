@@ -1,0 +1,18 @@
+---
+layout: page
+title: blog
+subtitle: breaking and building
+sitemap:
+  priority: 0.9
+---
+
+<ul class="list-posts">
+    {% for post in site.posts %}
+        <li class="post-teaser">
+            <a class="post-teaser__link" href="{{ post.url | prepend: site.baseurl }}">
+                <span class="post-teaser__title">{{ post.title | downcase }}</span>
+                <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" | downcase }}</span>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

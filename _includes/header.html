@@ -1,0 +1,30 @@
+<header class="header">
+    <div class="navigation">
+        <a href="/" class="logo">{{ site.title }}</a>
+
+        <ul class="menu">
+            <li class="menu__entry"><a href="{{ '/' | prepend: site.baseurl }}">blog</a></li>
+            <li class="menu__entry"><a href="{{ '/about' | prepend: site.baseurl }}">about</a></li>
+        </ul>
+    </div>
+
+    <ul class="social-links">
+        {% if site.author.facebook %}
+            <a href="https://facebook.com/{{ site.author.facebook }}" class="social-links__entry" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+        {% endif %}
+
+        {% if site.author.github %}
+            <a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+        {% endif %}
+
+        {% if site.author.keybase %}
+            <a href="https://keybase.io/{{ site.author.keybase }}" class="social-links__entry" target="_blank">
+                <i class="fa fa-key"></i>
+            </a>
+        {% endif %}
+    </ul>
+</header>

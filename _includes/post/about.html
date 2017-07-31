@@ -1,0 +1,6 @@
+<div class="about">
+    <div class="about__text">
+        written by <strong> {% if page.author.fullname %} {{ page.author.fullname | downcase }} {% else %} {{ site.author.fullname | downcase }} {% endif %}</strong>
+        on <strong>{{ page.date | date: "%d %B %Y" | downcase }}</strong>
+    </div>
+</div>
