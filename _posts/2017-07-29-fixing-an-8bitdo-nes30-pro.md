@@ -8,8 +8,6 @@ I'd been wanting to play old Nintendo 64 games for a while now, but it's impract
 
 The controller is pretty nice and about what I'd expected, but the left stick was stuck when it arrived. When the stick was released it would lean a little to the left, and moving it to the boundary would cause it to become stuck. That meant that there was always some degree of drifting and it made playing games a pain.
 
-{% fb 2017-07-29/stuckleft %}
-
 <a href="{% asset_path '2017-07-29/stuckleft' %}" data-no-instant>
   {% img '2017-07-29/stuckleft' magick:1/4 %}
 </a>
