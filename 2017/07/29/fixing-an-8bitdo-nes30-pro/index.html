@@ -7,7 +7,7 @@
 <title> Fixing an 8bitdo NES30 Pro — stuck sticks &raquo;  keff</title>
 <meta name="description" content="breaking and building">
 <meta name="keywords" content="">
-<link rel="canonical" href="http://localhost:4000/2017/07/29/fixing-an-8bitdo-nes30-pro/">
+<link rel="canonical" href="http://keff.me/2017/07/29/fixing-an-8bitdo-nes30-pro/">
         
 
 
@@ -18,8 +18,8 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/css/fluidbox.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link type="text/css" rel="stylesheet" href="/assets/normalize.css">
-<link type="text/css" rel="stylesheet" href="/assets/main.css">
+<link type="text/css" rel="stylesheet" href="/assets/normalize-f7978b7258ff8172fb5553402664fdded2759efb041e94dce212e4d7cc914c13.css">
+<link type="text/css" rel="stylesheet" href="/assets/main-33c9610351e432b824d5e7240c83f9db9f10bb2a23f6f3a43a95ccbfb030c673.css">
 
     </head>
 
@@ -68,46 +68,44 @@
 
 <p>The controller is pretty nice and about what I’d expected, but the left stick was stuck when it arrived. When the stick was released it would lean a little to the left, and moving it to the boundary would cause it to become stuck. That meant that there was always some degree of drifting and it made playing games a pain.</p>
 
-<p>{% asset_path ‘2017-07-29/stuckleft ‘ %}</p>
-
-<p><a href="/assets/2017-07-29/stuckleft.jpg" data-no-instant="">
-  <img src="/assets/2017-07-29/stuckleft-2e28ced6c57e281030ebc2b7cd2c91be118a40a14d1ac2b139aa919ca9a6fa3a.jpg" width="816" height="612" alt="2017-07-29/stuckleft-2e28ced6c57e281030ebc2b7cd2c91be118a40a14d1ac2b139aa919ca9a6fa3a.jpg" />
+<p><a href="/assets/2017-07-29/stuckleft-fe252fc6fcac69f92ee2d8da6e77e3ba3af3db4b59a128be671f635d31fa9c62.jpg" data-no-instant="">
+  <img src="/assets/2017-07-29/stuckleft-a143f50c4f298391c12d4bd94bb270a35ba93179da05daa8fee80c4d49fcffd3.jpg" width="800" height="600" alt="2017-07-29/stuckleft-a143f50c4f298391c12d4bd94bb270a35ba93179da05daa8fee80c4d49fcffd3.jpg" />
 </a></p>
 
 <p>After a quick Google, I found out that I wasn’t the only one with the problem. Some fixes included mashing the stick to the right for a while until the controller unstuck itself, others suggested loosening the case screws. Neither of these approaches worked for me, so I shelved the controller for a while and didn’t use it much (apart from the times when I had friends over and I was strapped for controllers).</p>
 
 <p>The thing didn’t come with a warranty (I bought it through a 3rd party vendor), so I decided to crack it open to see if I could fix it. The disassembly process was pretty straightforward - run a fingernail along the edge to open all the plastic locks, starting from the side with the MicroUSB port. There are a couple of Phillips head screws left to take out and some ribbon cables to detach.</p>
 
-<p><a href="/assets/2017-07-29/disassemble.jpg" data-no-instant="">
-  <img src="/assets/2017-07-29/disassemble-2e28ced6c57e281030ebc2b7cd2c91be118a40a14d1ac2b139aa919ca9a6fa3a.jpg" width="816" height="612" alt="2017-07-29/disassemble-2e28ced6c57e281030ebc2b7cd2c91be118a40a14d1ac2b139aa919ca9a6fa3a.jpg" />
+<p><a href="/assets/2017-07-29/disassemble-1b1fa1a0be2440b8d9818548fc6168cefe55f394aee26634f164f0368a2df74c.jpg" data-no-instant="">
+  <img src="/assets/2017-07-29/disassemble-a143f50c4f298391c12d4bd94bb270a35ba93179da05daa8fee80c4d49fcffd3.jpg" width="3264" height="2448" alt="2017-07-29/disassemble-a143f50c4f298391c12d4bd94bb270a35ba93179da05daa8fee80c4d49fcffd3.jpg" />
 </a></p>
 
 <p>After disassembly, there’s a board that contains just the thumbsticks.</p>
 
-<p><a href="/assets/2017-07-29/stuckcaseopen.jpg" data-no-instant="">
+<p><a href="/assets/2017-07-29/stuckcaseopen-aefbdb3c7b2fd31421183a9b13396f11c9d8ac22b4f83ec9851506a73baf0b8a.jpg" data-no-instant="">
   <img src="/assets/2017-07-29/stuckcaseopen-a143f50c4f298391c12d4bd94bb270a35ba93179da05daa8fee80c4d49fcffd3.jpg" width="800" height="600" alt="2017-07-29/stuckcaseopen-a143f50c4f298391c12d4bd94bb270a35ba93179da05daa8fee80c4d49fcffd3.jpg" />
 </a></p>
 
 <p>It’s possible to pull off the little covers with a little force, exposing the bare stick underneath.</p>
 
-<p><a href="/assets/2017-07-29/bentstick.jpg" data-no-instant="">
-  <img src="/assets/2017-07-29/bentstick-2e28ced6c57e281030ebc2b7cd2c91be118a40a14d1ac2b139aa919ca9a6fa3a.jpg" width="816" height="612" alt="2017-07-29/bentstick-2e28ced6c57e281030ebc2b7cd2c91be118a40a14d1ac2b139aa919ca9a6fa3a.jpg" />
+<p><a href="/assets/2017-07-29/bentstick-aa431be31b607b6febf6b6f8e55dba46806cdf97d56674b384d4a701d0322c12.jpg" data-no-instant="">
+  <img src="/assets/2017-07-29/bentstick-a143f50c4f298391c12d4bd94bb270a35ba93179da05daa8fee80c4d49fcffd3.jpg" width="800" height="600" alt="2017-07-29/bentstick-a143f50c4f298391c12d4bd94bb270a35ba93179da05daa8fee80c4d49fcffd3.jpg" />
 </a></p>
 
 <p>Turns out that what’d happened was that one of the sticks had gotten mangled in production. It ended up being a really simple fix - just grab a pair of pliers and bend it back towards the right. The sticks seemed like they were made out of metal, so I didn’t have to be too gentle about it. Make sure that the sticks aren’t pulled too forcefully, or the plastic housing around the circuitry might crack.</p>
 
-<p><a href="/assets/2017-07-29/straightened.jpg" data-no-instant="">
-  <img src="/assets/2017-07-29/straightened-2e28ced6c57e281030ebc2b7cd2c91be118a40a14d1ac2b139aa919ca9a6fa3a.jpg" width="816" height="612" alt="2017-07-29/straightened-2e28ced6c57e281030ebc2b7cd2c91be118a40a14d1ac2b139aa919ca9a6fa3a.jpg" />
+<p><a href="/assets/2017-07-29/straightened-fc6c1b200ceedbfa62e7288e91e9f6827b0afc1d79d498f56825e7c3cfd64d65.jpg" data-no-instant="">
+  <img src="/assets/2017-07-29/straightened-a143f50c4f298391c12d4bd94bb270a35ba93179da05daa8fee80c4d49fcffd3.jpg" width="800" height="600" alt="2017-07-29/straightened-a143f50c4f298391c12d4bd94bb270a35ba93179da05daa8fee80c4d49fcffd3.jpg" />
 </a></p>
 
-<p><a href="/assets/2017-07-29/stickboard.jpg" data-no-instant="">
-  <img src="/assets/2017-07-29/stickboard-2e28ced6c57e281030ebc2b7cd2c91be118a40a14d1ac2b139aa919ca9a6fa3a.jpg" width="816" height="612" alt="2017-07-29/stickboard-2e28ced6c57e281030ebc2b7cd2c91be118a40a14d1ac2b139aa919ca9a6fa3a.jpg" />
+<p><a href="/assets/2017-07-29/stickboard-2709f5f2a96b686cd438fd485d0ce85c43e80882de9529858e1cfc7af37ab5c7.jpg" data-no-instant="">
+  <img src="/assets/2017-07-29/stickboard-a143f50c4f298391c12d4bd94bb270a35ba93179da05daa8fee80c4d49fcffd3.jpg" width="800" height="600" alt="2017-07-29/stickboard-a143f50c4f298391c12d4bd94bb270a35ba93179da05daa8fee80c4d49fcffd3.jpg" />
 </a></p>
 
 <p>All that was left was to put the thing back together!</p>
 
-<p><a href="/assets/2017-07-29/fixed.jpg" data-no-instant="">
-  <img src="/assets/2017-07-29/fixed-2e28ced6c57e281030ebc2b7cd2c91be118a40a14d1ac2b139aa919ca9a6fa3a.jpg" width="816" height="612" alt="2017-07-29/fixed-2e28ced6c57e281030ebc2b7cd2c91be118a40a14d1ac2b139aa919ca9a6fa3a.jpg" />
+<p><a href="/assets/2017-07-29/fixed-1b2b809a16890a7c4c6fb3e34a5962993670559ec4f17d48cc45cffa9815f140.jpg" data-no-instant="">
+  <img src="/assets/2017-07-29/fixed-a143f50c4f298391c12d4bd94bb270a35ba93179da05daa8fee80c4d49fcffd3.jpg" width="800" height="600" alt="2017-07-29/fixed-a143f50c4f298391c12d4bd94bb270a35ba93179da05daa8fee80c4d49fcffd3.jpg" />
 </a></p>
 
 <p>Nowadays, I use it for most of my retro gaming. Not bad for something I had almost given up on!</p>
@@ -141,7 +139,7 @@ MathJax.Hub.Config({
 });
 </script>
 
-<script type="text/javascript" src="/assets/scripts.js" data-no-instant></script>
+<script type="text/javascript" src="/assets/scripts-aac8e368f71f5f071dadcd5f7e9b9de969a5bf98d636d0f44a5122dab2eed4aa.js" data-no-instant></script>
 
         
     <script>

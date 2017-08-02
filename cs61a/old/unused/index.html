@@ -1,0 +1,35 @@
+<h1>Question 1</h1>
+<p>On the midterm, you wrote an algorithm to figure out the number of ways to parenthesize an expression. Here’s a brief refresher of how it worked:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">count_groupings</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="s">"""For N &gt;= 1, the number of distinct parenthesizations of a product of N
+    items.
+
+    &gt;&gt;&gt; count_groupings (1)
+    1
+    &gt;&gt;&gt; count_groupings (2)
+    1
+    &gt;&gt;&gt; count_groupings (3)
+    2
+    &gt;&gt;&gt; count_groupings (4)
+    5
+    &gt;&gt;&gt; count_groupings (5)
+    14
+    """</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+
+    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">count_groupings</span> <span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">*</span> <span class="n">count_groupings</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="n">i</span><span class="p">)</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">total</span>
+</code></pre>
+</div>
+
+<p>What’s the runtime of this algorithm?</p>
+
+<hr />
+

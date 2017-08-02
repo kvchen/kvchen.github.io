@@ -239,7 +239,8 @@ p {
 img {
   margin: 40px auto;
   display: block;
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 blockquote {
   margin: 0px;
@@ -479,9 +480,12 @@ strong {
 #instantclick-bar {
   background: #f2523a; }
 
+.solution {
+  display: none; }
+
 /*
 
-    Name:       Base16 Railscasts Light
+    Name:       Base16 Railscasts Dark
     Author:     Ryan Bates (http://railscasts.com)
 
     Pygments template by Jan T. Sott (https://github.com/idleberg)
@@ -489,14 +493,16 @@ strong {
 
 */
 .highlight .hll {
-  background-color: #f4f1ed; }
+  background-color: #3a4055; }
 
 .highlight {
-  A: #eee;
-  color: #2b2b2b; }
+  background: #2b2b2b;
+  color: #f9f7f3;
+  padding: 20px;
+  border-radius: 4px; }
 
 .highlight .c {
-  color: #d4cfc9; }
+  color: #5a647e; }
 
 /* Comment */
 .highlight .err {
@@ -512,7 +518,7 @@ strong {
 
 /* Literal */
 .highlight .n {
-  color: #2b2b2b; }
+  color: #f9f7f3; }
 
 /* Name */
 .highlight .o {
@@ -520,23 +526,23 @@ strong {
 
 /* Operator */
 .highlight .p {
-  color: #2b2b2b; }
+  color: #f9f7f3; }
 
 /* Punctuation */
 .highlight .cm {
-  color: #d4cfc9; }
+  color: #5a647e; }
 
 /* Comment.Multiline */
 .highlight .cp {
-  color: #d4cfc9; }
+  color: #5a647e; }
 
 /* Comment.Preproc */
 .highlight .c1 {
-  color: #d4cfc9; }
+  color: #5a647e; }
 
 /* Comment.Single */
 .highlight .cs {
-  color: #d4cfc9; }
+  color: #5a647e; }
 
 /* Comment.Special */
 .highlight .gd {
@@ -548,7 +554,7 @@ strong {
 
 /* Generic.Emph */
 .highlight .gh {
-  color: #2b2b2b;
+  color: #f9f7f3;
   font-weight: bold; }
 
 /* Generic.Heading */
@@ -557,7 +563,7 @@ strong {
 
 /* Generic.Inserted */
 .highlight .gp {
-  color: #d4cfc9;
+  color: #5a647e;
   font-weight: bold; }
 
 /* Generic.Prompt */
@@ -611,7 +617,7 @@ strong {
 
 /* Name.Attribute */
 .highlight .nb {
-  color: #2b2b2b; }
+  color: #f9f7f3; }
 
 /* Name.Builtin */
 .highlight .nc {
@@ -627,7 +633,7 @@ strong {
 
 /* Name.Decorator */
 .highlight .ni {
-  color: #2b2b2b; }
+  color: #f9f7f3; }
 
 /* Name.Entity */
 .highlight .ne {
@@ -639,7 +645,7 @@ strong {
 
 /* Name.Function */
 .highlight .nl {
-  color: #2b2b2b; }
+  color: #f9f7f3; }
 
 /* Name.Label */
 .highlight .nn {
@@ -651,7 +657,7 @@ strong {
 
 /* Name.Other */
 .highlight .py {
-  color: #2b2b2b; }
+  color: #f9f7f3; }
 
 /* Name.Property */
 .highlight .nt {
@@ -667,7 +673,7 @@ strong {
 
 /* Operator.Word */
 .highlight .w {
-  color: #2b2b2b; }
+  color: #f9f7f3; }
 
 /* Text.Whitespace */
 .highlight .mf {
@@ -691,11 +697,11 @@ strong {
 
 /* Literal.String.Backtick */
 .highlight .sc {
-  color: #2b2b2b; }
+  color: #f9f7f3; }
 
 /* Literal.String.Char */
 .highlight .sd {
-  color: #d4cfc9; }
+  color: #5a647e; }
 
 /* Literal.String.Doc */
 .highlight .s2 {
@@ -731,7 +737,7 @@ strong {
 
 /* Literal.String.Symbol */
 .highlight .bp {
-  color: #2b2b2b; }
+  color: #f9f7f3; }
 
 /* Name.Builtin.Pseudo */
 .highlight .vc {

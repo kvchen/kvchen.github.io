@@ -3,7 +3,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2017/07/29/fixing-an-8bitdo-nes30-pro//</loc>
+      <loc>http://keff.me/2017/07/29/fixing-an-8bitdo-nes30-pro//</loc>
       
         <lastmod>2017-07-29T00:00:00-07:00</lastmod>
       
@@ -21,9 +21,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/about/</loc>
+      <loc>http://keff.me/about/</loc>
       
-        <lastmod>2017-07-30T11:24:29-07:00</lastmod>
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -38,9 +38,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/</loc>
+      <loc>http://keff.me/</loc>
       
-        <lastmod>2017-07-30T11:24:29-07:00</lastmod>
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -51,6 +51,516 @@
     </url>
     
   
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs184/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/extra/disc05/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/extra/disc06/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/extra/disc08/calculator.py</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/extra/disc08/pair.py</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/extra/disc09.py</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/extra/disc09.scm</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/extra/disc10/disc10.sql</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/notes/disc05/0503.py</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/notes/disc05/horse.py</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/notes/disc05/pre.py</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/notes/notes00/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/old/quiz07/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/old/quiz08/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/old/quiz09/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/old/quiz10/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/old/quiz11/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/old/quizoldold/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/old/unused/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/quiz00/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/quiz01/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/quiz02/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/quiz03/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/quiz04/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/quiz05/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/quiz06/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/quiz07/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/quiz08/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/quiz09/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/quiz10/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/quiz11/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/quiz12/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://keff.me/cs61a/warmup08/</loc>
+      
+        <lastmod>2017-08-01T22:13:25-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
     
   
 </urlset>
