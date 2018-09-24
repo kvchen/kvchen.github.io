@@ -8,11 +8,16 @@
         "useBuiltIns": "usage",
         "shippedProposals": true,
         "targets": {
-          "browsers": [">0.25%", "not dead"]
+          "browsers": [
+            ">0.25%",
+            "not dead"
+          ]
         }
       }
     ],
-    ["@babel/preset-flow"],
+    [
+      "@babel/preset-flow"
+    ],
     [
       "@babel/preset-react",
       {

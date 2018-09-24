@@ -1,9 +1,9 @@
 // @flow
 
+import Layout from '../components/layout';
 import type { PostQuery } from '../codegen/graphql/PostQuery';
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../components/layout';
 
 type Props = {|
   data: PostQuery,

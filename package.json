@@ -10,6 +10,7 @@
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.0.1",
+    "gatsby-remark-external-links": "^0.0.4",
     "gatsby-remark-prismjs": "^3.0.0",
     "gatsby-source-filesystem": "^2.0.1",
     "gatsby-transformer-remark": "^2.1.3",
@@ -25,7 +26,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "graphql": "rm -f src/codegen/graphql/* && apollo schema:download --endpoint http://localhost:8000/___graphql gatsby-schema.json && apollo codegen:generate --tagName=graphql  --target=flow --useFlowExactObjects --useFlowReadOnlyTypes --queries='./src/**/*.js' --schema=./gatsby-schema.json --outputFlat src/codegen/graphql",
+    "graphql": "rm -f src/codegen/graphql/* && apollo schema:download --endpoint http://localhost:8000/___graphql gatsby-schema.json && apollo codegen:generate --tagName graphql  --target flow --useFlowExactObjects --useFlowReadOnlyTypes --queries './src/**/*.js' --schema ./gatsby-schema.json --outputFlat src/codegen/graphql",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gatsby build && gh-pages -d public -b master"
   },

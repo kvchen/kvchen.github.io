@@ -4,8 +4,8 @@ import * as React from 'react';
 
 import type { HeaderSiteFragment } from '../codegen/graphql/HeaderSiteFragment';
 import { Link } from 'gatsby';
-import { graphql } from 'gatsby';
 import Nav from './nav';
+import { graphql } from 'gatsby';
 
 type Props = {|
   site: ?HeaderSiteFragment,

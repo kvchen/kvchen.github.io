@@ -1,6 +1,6 @@
 // @flow
 
-import type { LayoutQuery } from '../codegen/graphql/LayoutQuery';
+import '../styles/main.scss';
 
 import * as React from 'react';
 
@@ -8,8 +8,7 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
 import Helmet from 'react-helmet';
-
-import '../styles/main.scss';
+import type { LayoutQuery } from '../codegen/graphql/LayoutQuery';
 
 type Props = {|
   children: React.Node,
