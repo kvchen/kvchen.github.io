@@ -14,7 +14,7 @@ export default class AboutPage extends React.PureComponent<Props> {
         <p>
           I'm Kevin, a recent graduate from the Electrical Engineering and
           Computer Science program at UC Berkeley. I'm currently working at
-          Facebook at a software engineer and pursuing a part-time masters
+          Facebook as a software engineer and pursuing a part-time masters
           degree from Stanford in AI/ML.
         </p>
         <p>
