@@ -6,7 +6,7 @@
 *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 
@@ -32,7 +32,6 @@ body {
     padding: 0;
     color: $color-text;
     min-height: 100%;
-    width: 100%;
     @include clearfix();
     -webkit-font-smoothing: antialiased; // Fix for webkit rendering
     // Ala Trent Walton (http://trentwalton.com/2011/09/07/css-hyphenation):
