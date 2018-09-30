@@ -24,7 +24,11 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: ['gatsby-remark-prismjs', 'gatsby-remark-external-links'],
+        plugins: [
+          'gatsby-remark-katex',
+          'gatsby-remark-prismjs',
+          'gatsby-remark-external-links',
+        ],
       },
     },
     'gatsby-plugin-offline',
