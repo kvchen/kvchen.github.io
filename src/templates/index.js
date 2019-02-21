@@ -24,7 +24,7 @@ export default function IndexPage({ pageContext }: Props) {
 
   return (
     <Layout>
-      {(group || [])
+      {(group ?? [])
         .map(group => group?.node)
         .filter(Boolean)
         .map(post => (
