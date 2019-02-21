@@ -9,22 +9,19 @@ type Props = {|
   data: PostQuery,
 |};
 
-export default class Post extends React.PureComponent<Props> {
-  render() {
-    const { data } = this.props;
-    const markdownRemark = data?.markdownRemark;
-    const frontmatter = markdownRemark?.frontmatter;
+export default function Post({ data }: Props) {
+  const markdownRemark = data?.markdownRemark;
+  const frontmatter = markdownRemark?.frontmatter;
 
-    return (
-      <Layout>
-        <h1>{frontmatter?.title}</h1>
-        <h2>
-          <time>{frontmatter?.date}</time>
-        </h2>
-        <div dangerouslySetInnerHTML={{ __html: markdownRemark?.html }} />
-      </Layout>
-    );
-  }
+  return (
+    <Layout>
+      <h1>{frontmatter?.title}</h1>
+      <h2>
+        <time>{frontmatter?.date}</time>
+      </h2>
+      <div dangerouslySetInnerHTML={{ __html: markdownRemark?.html }} />
+    </Layout>
+  );
 }
 
 export const postQuery = graphql`

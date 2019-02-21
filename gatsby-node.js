@@ -11,7 +11,7 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
   const template = path.resolve(`src/templates/post.js`);
-  const result = graphql(`
+  return graphql(`
     query PostGenerationQuery {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {

@@ -9,11 +9,13 @@
 // ====================================================
 
 export type LayoutQuery_site_siteMetadata = {|
-  +title: ?string
+  +__typename: "siteMetadata_2",
+  +title: ?string,
 |};
 
 export type LayoutQuery_site = {|
-  +siteMetadata: ?LayoutQuery_site_siteMetadata
+  +__typename: "Site",
+  +siteMetadata: ?LayoutQuery_site_siteMetadata,
 |};
 
 export type LayoutQuery = {|

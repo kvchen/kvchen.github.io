@@ -1386,16 +1386,6 @@
                 "defaultValue": null
               },
               {
-                "name": "excerpt",
-                "description": null,
-                "type": {
-                  "kind": "INPUT_OBJECT",
-                  "name": "excerptQueryString_3",
-                  "ofType": null
-                },
-                "defaultValue": null
-              },
-              {
                 "name": "rawMarkdownBody",
                 "description": null,
                 "type": {
@@ -1421,6 +1411,16 @@
                 "type": {
                   "kind": "INPUT_OBJECT",
                   "name": "htmlQueryString_3",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "excerpt",
+                "description": null,
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "excerptQueryString_3",
                   "ofType": null
                 },
                 "defaultValue": null
@@ -1518,11 +1518,15 @@
             "name": "order",
             "description": null,
             "type": {
-              "kind": "ENUM",
-              "name": "sitePageConnectionSortOrderValues",
-              "ofType": null
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "ENUM",
+                "name": "sitePageConnectionSortOrderValues",
+                "ofType": null
+              }
             },
-            "defaultValue": "ASC"
+            "defaultValue": "[ASC]"
           }
         ],
         "interfaces": null,
@@ -1623,12 +1627,6 @@
           },
           {
             "name": "id",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "parent",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -3306,16 +3304,6 @@
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "sitePageConnectionPluginCreatorPackageJsonInputObject",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "parent",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "sitePageConnectionPluginCreatorParentQueryString",
               "ofType": null
             },
             "defaultValue": null
@@ -6275,85 +6263,6 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "sitePageConnectionPluginCreatorParentQueryString",
-        "description": null,
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "eq",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "ne",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "regex",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "glob",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "in",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "nin",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
         "name": "sitePageConnectionPluginCreatorInternalInputObject",
         "description": null,
         "fields": null,
@@ -8789,12 +8698,6 @@
             "deprecationReason": null
           },
           {
-            "name": "parent",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "internal___type",
             "description": null,
             "isDeprecated": false,
@@ -8915,12 +8818,6 @@
           },
           {
             "name": "id",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "parent",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -9106,11 +9003,15 @@
             "name": "order",
             "description": null,
             "type": {
-              "kind": "ENUM",
-              "name": "sitePluginConnectionSortOrderValues",
-              "ofType": null
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "ENUM",
+                "name": "sitePluginConnectionSortOrderValues",
+                "ofType": null
+              }
             },
-            "defaultValue": "ASC"
+            "defaultValue": "[ASC]"
           }
         ],
         "interfaces": null,
@@ -9271,12 +9172,6 @@
           },
           {
             "name": "packageJson___keywords",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "parent",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -12997,12 +12892,6 @@
             "deprecationReason": null
           },
           {
-            "name": "parent",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "internal___contentDigest",
             "description": null,
             "isDeprecated": false,
@@ -13182,12 +13071,6 @@
             "deprecationReason": null
           },
           {
-            "name": "parent",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "internal___contentDigest",
             "description": null,
             "isDeprecated": false,
@@ -13362,11 +13245,15 @@
             "name": "order",
             "description": null,
             "type": {
-              "kind": "ENUM",
-              "name": "directoryConnectionSortOrderValues",
-              "ofType": null
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "ENUM",
+                "name": "directoryConnectionSortOrderValues",
+                "ofType": null
+              }
             },
-            "defaultValue": "ASC"
+            "defaultValue": "[ASC]"
           }
         ],
         "interfaces": null,
@@ -13383,12 +13270,6 @@
         "enumValues": [
           {
             "name": "id",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "parent",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -16527,7 +16408,7 @@
       {
         "kind": "SCALAR",
         "name": "Float",
-        "description": "The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](http://en.wikipedia.org/wiki/IEEE_floating_point). ",
+        "description": "The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](https://en.wikipedia.org/wiki/IEEE_floating_point). ",
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -18392,12 +18273,6 @@
             "deprecationReason": null
           },
           {
-            "name": "parent",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "internal___contentDigest",
             "description": null,
             "isDeprecated": false,
@@ -18632,12 +18507,6 @@
         "enumValues": [
           {
             "name": "id",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "parent",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -19021,11 +18890,15 @@
             "name": "order",
             "description": null,
             "type": {
-              "kind": "ENUM",
-              "name": "fileConnectionSortOrderValues",
-              "ofType": null
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "ENUM",
+                "name": "fileConnectionSortOrderValues",
+                "ofType": null
+              }
             },
-            "defaultValue": "ASC"
+            "defaultValue": "[ASC]"
           }
         ],
         "interfaces": null,
@@ -19048,12 +18921,6 @@
           },
           {
             "name": "children",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "parent",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -24331,6 +24198,16 @@
                   "ofType": null
                 },
                 "defaultValue": "false"
+              },
+              {
+                "name": "format",
+                "description": null,
+                "type": {
+                  "kind": "ENUM",
+                  "name": "ExcerptFormats",
+                  "ofType": null
+                },
+                "defaultValue": null
               }
             ],
             "type": {
@@ -24393,6 +24270,26 @@
                   "ofType": null
                 },
                 "defaultValue": "\"fields.slug\""
+              },
+              {
+                "name": "maxDepth",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null
+              },
+              {
+                "name": "heading",
+                "description": null,
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                },
+                "defaultValue": null
               }
             ],
             "type": {
@@ -24567,18 +24464,6 @@
             },
             "isDeprecated": false,
             "deprecationReason": null
-          },
-          {
-            "name": "_PARENT",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
           }
         ],
         "inputFields": null,
@@ -24594,6 +24479,29 @@
         "inputFields": null,
         "interfaces": null,
         "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "ExcerptFormats",
+        "description": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "PLAIN",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "HTML",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
         "possibleTypes": null
       },
       {
@@ -24812,12 +24720,6 @@
           },
           {
             "name": "children",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "parent",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -25069,12 +24971,6 @@
           },
           {
             "name": "children",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "parent",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -25464,11 +25360,15 @@
             "name": "order",
             "description": null,
             "type": {
-              "kind": "ENUM",
-              "name": "markdownRemarkConnectionSortOrderValues",
-              "ofType": null
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "ENUM",
+                "name": "markdownRemarkConnectionSortOrderValues",
+                "ofType": null
+              }
             },
-            "defaultValue": "ASC"
+            "defaultValue": "[ASC]"
           }
         ],
         "interfaces": null,
@@ -25538,18 +25438,6 @@
             "deprecationReason": null
           },
           {
-            "name": "frontmatter____PARENT",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "excerpt",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "rawMarkdownBody",
             "description": null,
             "isDeprecated": false,
@@ -25563,6 +25451,12 @@
           },
           {
             "name": "html",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "excerpt",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -25666,16 +25560,6 @@
             "defaultValue": null
           },
           {
-            "name": "excerpt",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "excerptQueryString_4",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
             "name": "rawMarkdownBody",
             "description": null,
             "type": {
@@ -25701,6 +25585,16 @@
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "htmlQueryString_4",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "excerpt",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "excerptQueryString_4",
               "ofType": null
             },
             "defaultValue": null
@@ -26231,16 +26125,6 @@
               "ofType": null
             },
             "defaultValue": null
-          },
-          {
-            "name": "_PARENT",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "markdownRemarkConnectionFrontmatterParentQueryString_2",
-              "ofType": null
-            },
-            "defaultValue": null
           }
         ],
         "interfaces": null,
@@ -26486,164 +26370,6 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "markdownRemarkConnectionFrontmatterParentQueryString_2",
-        "description": null,
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "eq",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "ne",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "regex",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "glob",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "in",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "nin",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "excerptQueryString_4",
-        "description": null,
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "eq",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "ne",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "regex",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "glob",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "in",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "nin",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
         "name": "markdownRemarkConnectionRawMarkdownBodyQueryString_2",
         "description": null,
         "fields": null,
@@ -26803,6 +26529,85 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "htmlQueryString_4",
+        "description": null,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "eq",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "ne",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "regex",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "glob",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "in",
+            "description": null,
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "nin",
+            "description": null,
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "excerptQueryString_4",
         "description": null,
         "fields": null,
         "inputFields": [
@@ -27864,18 +27669,6 @@
             "deprecationReason": null
           },
           {
-            "name": "frontmatter____PARENT",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "excerpt",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "rawMarkdownBody",
             "description": null,
             "isDeprecated": false,
@@ -27948,18 +27741,6 @@
           },
           {
             "name": "frontmatter___date",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "frontmatter____PARENT",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "excerpt",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -29587,16 +29368,6 @@
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "sitePagePluginCreatorPackageJsonInputObject",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "parent",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "sitePagePluginCreatorParentQueryString",
               "ofType": null
             },
             "defaultValue": null
@@ -32478,85 +32249,6 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "sitePagePluginCreatorPackageJsonKeywordsQueryList",
-        "description": null,
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "eq",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "ne",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "regex",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "glob",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "in",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "nin",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "sitePagePluginCreatorParentQueryString",
         "description": null,
         "fields": null,
         "inputFields": [
@@ -45175,16 +44867,6 @@
               "ofType": null
             },
             "defaultValue": null
-          },
-          {
-            "name": "_PARENT",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "markdownRemarkFrontmatterParentQueryString_2",
-              "ofType": null
-            },
-            "defaultValue": null
           }
         ],
         "interfaces": null,
@@ -45430,164 +45112,6 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "markdownRemarkFrontmatterParentQueryString_2",
-        "description": null,
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "eq",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "ne",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "regex",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "glob",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "in",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "nin",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
-        "name": "excerptQueryString_3",
-        "description": null,
-        "fields": null,
-        "inputFields": [
-          {
-            "name": "eq",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "ne",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "regex",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "glob",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "in",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "nin",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null
-          }
-        ],
-        "interfaces": null,
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "INPUT_OBJECT",
         "name": "markdownRemarkRawMarkdownBodyQueryString_2",
         "description": null,
         "fields": null,
@@ -45747,6 +45271,85 @@
       {
         "kind": "INPUT_OBJECT",
         "name": "htmlQueryString_3",
+        "description": null,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "eq",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "ne",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "regex",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "glob",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "in",
+            "description": null,
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          },
+          {
+            "name": "nin",
+            "description": null,
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "defaultValue": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "excerptQueryString_3",
         "description": null,
         "fields": null,
         "inputFields": [
@@ -47233,54 +46836,6 @@
             },
             "isDeprecated": false,
             "deprecationReason": null
-          },
-          {
-            "name": "onOperation",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Boolean",
-                "ofType": null
-              }
-            },
-            "isDeprecated": true,
-            "deprecationReason": "Use `locations`."
-          },
-          {
-            "name": "onFragment",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Boolean",
-                "ofType": null
-              }
-            },
-            "isDeprecated": true,
-            "deprecationReason": "Use `locations`."
-          },
-          {
-            "name": "onField",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Boolean",
-                "ofType": null
-              }
-            },
-            "isDeprecated": true,
-            "deprecationReason": "Use `locations`."
           }
         ],
         "inputFields": null,
@@ -47335,6 +46890,12 @@
           {
             "name": "INLINE_FRAGMENT",
             "description": "Location adjacent to an inline fragment.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "VARIABLE_DEFINITION",
+            "description": "Location adjacent to a variable definition.",
             "isDeprecated": false,
             "deprecationReason": null
           },
@@ -47469,7 +47030,7 @@
         "args": [
           {
             "name": "reason",
-            "description": "Explains why this element was deprecated, usually also including a suggestion for how to access supported similar data. Formatted in [Markdown](https://daringfireball.net/projects/markdown/).",
+            "description": "Explains why this element was deprecated, usually also including a suggestion for how to access supported similar data. Formatted using the Markdown syntax (as specified by [CommonMark](https://commonmark.org/).",
             "type": {
               "kind": "SCALAR",
               "name": "String",

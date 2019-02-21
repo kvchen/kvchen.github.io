@@ -17,39 +17,36 @@ type Props = {|
   |},
 |};
 
-export default class IndexPage extends React.PureComponent<Props> {
-  render() {
-    const { pageContext } = this.props;
-    const { group, index, pageCount } = pageContext;
-    const previousUrl = index - 1 === 1 ? '' : (index - 1).toString();
-    const nextUrl = (index + 1).toString();
+export default function IndexPage({ pageContext }: Props) {
+  const { group, index, pageCount } = pageContext;
+  const previousUrl = index - 1 === 1 ? '' : (index - 1).toString();
+  const nextUrl = (index + 1).toString();
 
-    return (
-      <Layout>
-        {(group || [])
-          .map(group => group?.node)
-          .filter(Boolean)
-          .map(post => (
-            <PostSummary post={post} />
-          ))}
-        <nav className="pagination" role="navigation">
-          {index === 0 ? (
-            <Link className="newer-posts" to={nextUrl}>
-              &larr; Newer Posts
-            </Link>
-          ) : null}
-          <span className="page-number">
-            Page {index} of {pageCount}
-          </span>
-          {index === pageCount - 1 ? (
-            <Link className="older-posts" to={previousUrl}>
-              Older Posts &rarr;
-            </Link>
-          ) : null}
-        </nav>
-      </Layout>
-    );
-  }
+  return (
+    <Layout>
+      {(group || [])
+        .map(group => group?.node)
+        .filter(Boolean)
+        .map(post => (
+          <PostSummary post={post} />
+        ))}
+      <nav className="pagination" role="navigation">
+        {index === 0 ? (
+          <Link className="newer-posts" to={nextUrl}>
+            &larr; Newer Posts
+          </Link>
+        ) : null}
+        <span className="page-number">
+          Page {index} of {pageCount}
+        </span>
+        {index === pageCount - 1 ? (
+          <Link className="older-posts" to={previousUrl}>
+            Older Posts &rarr;
+          </Link>
+        ) : null}
+      </nav>
+    </Layout>
+  );
 }
 
 // NOTE: This is just for Flow-typing and not actually executed.

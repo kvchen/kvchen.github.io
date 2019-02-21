@@ -12,10 +12,9 @@ export default class AboutPage extends React.PureComponent<Props> {
       <Layout>
         <h1>About Me</h1>
         <p>
-          I'm Kevin, a recent graduate from the Electrical Engineering and
-          Computer Science program at UC Berkeley. I'm currently working at
-          Facebook as a software engineer and pursuing a part-time masters
-          degree from Stanford in AI/ML.
+          I'm Kevin, a software engineer working at Facebook. I graduated from
+          the Electrical Engineering and Computer Science program at UC Berkeley
+          and I'm pursuing a part-time masters degree from Stanford in AI/ML.
         </p>
         <p>
           If you're trying to get in touch, my email is{' '}

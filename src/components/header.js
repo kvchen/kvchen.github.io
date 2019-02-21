@@ -11,22 +11,19 @@ type Props = {|
   site: ?HeaderSiteFragment,
 |};
 
-export default class Header extends React.PureComponent<Props> {
-  render() {
-    const { site } = this.props;
-    const title = site?.siteMetadata?.title || '';
+export default function Header({ site }: Props) {
+  const title = site?.siteMetadata?.title || '';
 
-    return (
-      <header id="site-header">
-        <div className="container">
-          <h1 className="blog-title heading">
-            <Link to="/">{title}</Link>
-          </h1>
-          <Nav />
-        </div>
-      </header>
-    );
-  }
+  return (
+    <header id="site-header">
+      <div className="container">
+        <h1 className="blog-title heading">
+          <Link to="/">{title}</Link>
+        </h1>
+        <Nav />
+      </div>
+    </header>
+  );
 }
 
 export const headerFragment = graphql`

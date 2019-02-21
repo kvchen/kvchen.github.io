@@ -9,11 +9,13 @@
 // ====================================================
 
 export type HeaderSiteFragment_siteMetadata = {|
-  +title: ?string
+  +__typename: "siteMetadata_2",
+  +title: ?string,
 |};
 
 export type HeaderSiteFragment = {|
-  +siteMetadata: ?HeaderSiteFragment_siteMetadata
+  +__typename: "Site",
+  +siteMetadata: ?HeaderSiteFragment_siteMetadata,
 |};
 
 /* @flow */
