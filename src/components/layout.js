@@ -14,41 +14,34 @@ type Props = {|
   children: React.Node,
 |};
 
-export default class Layout extends React.PureComponent<Props> {
-  renderData = (data: LayoutQuery): React.Node => {
-    const { children } = this.props;
-    return (
-      <>
-        <Helmet>
-          <html lang="en" />
-          <meta charSet="utf-8" />
-          <title>{data?.site?.siteMetadata?.title}</title>
-        </Helmet>
-        <Header site={data.site} />
-        <main className="content" role="main">
-          <div className="container">
-            <div>{children}</div>
-          </div>
-        </main>
-      </>
-    );
-  };
-
-  render() {
-    return (
-      <StaticQuery
-        query={graphql`
-          query LayoutQuery {
-            site {
-              ...HeaderSiteFragment
-              siteMetadata {
-                title
-              }
+export default function Layout({ children }: Props) {
+  return (
+    <StaticQuery
+      query={graphql`
+        query LayoutQuery {
+          site {
+            ...HeaderSiteFragment
+            siteMetadata {
+              title
             }
           }
-        `}
-        render={this.renderData}
-      />
-    );
-  }
+        }
+      `}
+      render={(data: LayoutQuery) => (
+        <>
+          <Helmet>
+            <html lang="en" />
+            <meta charSet="utf-8" />
+            <title>{data?.site?.siteMetadata?.title}</title>
+          </Helmet>
+          <Header site={data.site} />
+          <main className="content" role="main">
+            <div className="container">
+              <div>{children}</div>
+            </div>
+          </main>
+        </>
+      )}
+    />
+  );
 }
