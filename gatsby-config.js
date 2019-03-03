@@ -8,8 +8,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'keff.me',
-        short_name: 'keff.me',
+        name: 'keff.dev',
+        short_name: 'keff.dev',
         start_url: '/',
         display: 'minimal-ui',
       },
