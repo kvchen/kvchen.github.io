@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "author": "Kevin Chen <keffcat@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.1.9",
+    "gatsby": "^2.23.1",
     "gatsby-paginate": "^1.0.17",
     "gatsby-plugin-manifest": "^2.0.18",
     "gatsby-plugin-offline": "^2.0.24",
@@ -15,6 +15,7 @@
     "gatsby-remark-prismjs": "^3.2.4",
     "gatsby-source-filesystem": "^2.0.20",
     "gatsby-transformer-remark": "^2.2.5",
+    "global": "^4.4.0",
     "katex": "^0.10.0",
     "node-sass": "^4.11.0",
     "prismjs": "^1.15.0",

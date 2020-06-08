@@ -4,12 +4,11 @@ import * as React from 'react';
 
 import type { HeaderSiteFragment } from '../codegen/graphql/HeaderSiteFragment';
 import { Link } from 'gatsby';
-import Nav from './nav';
 import { graphql } from 'gatsby';
 
-type Props = {|
+type Props = {
   site: ?HeaderSiteFragment,
-|};
+};
 
 export default function Header({ site }: Props) {
   const title = site?.siteMetadata?.title || '';
@@ -20,7 +19,6 @@ export default function Header({ site }: Props) {
         <h1 className="blog-title heading">
           <Link to="/">{title}</Link>
         </h1>
-        <Nav />
       </div>
     </header>
   );

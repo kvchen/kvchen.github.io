@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import Layout from '../components/layout';
 
-type Props = {||};
+type Props = {};
 
 export default function NotFoundPage(props: Props) {
   return (

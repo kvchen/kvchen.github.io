@@ -5,9 +5,9 @@ import type { PostQuery } from '../codegen/graphql/PostQuery';
 import React from 'react';
 import { graphql } from 'gatsby';
 
-type Props = {|
+type Props = {
   data: PostQuery,
-|};
+};
 
 export default function Post({ data }: Props) {
   const markdownRemark = data?.markdownRemark;
