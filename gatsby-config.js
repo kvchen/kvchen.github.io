@@ -3,6 +3,7 @@ module.exports = {
     title: 'keff'
   },
   plugins: [
+    'gatsby-plugin-emotion',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {

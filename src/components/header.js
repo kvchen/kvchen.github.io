@@ -17,7 +17,7 @@ export default function Header({ site }: Props) {
     <header id="site-header">
       <div className="container">
         <h1 className="blog-title heading">
-          <Link to="/">{title}</Link>
+          <Link to="/">./{title}</Link>
         </h1>
       </div>
     </header>
