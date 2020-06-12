@@ -16,7 +16,7 @@ export default function AboutPage(props: Props) {
         Science (EECS) program at UC Berkeley.
       </p>
       <p>
-        If you're trying to get in touch, my email is{' '}
+        If you'd like to get in touch, my email is{' '}
         <a href="ma&#105;lto&#58;%&#54;&#66;ef&#102;cat&#64;&#103;%&#54;D&#97;&#105;l&#46;com">
           ke&#102;fcat&#64;gmai&#108;&#46;com
         </a>

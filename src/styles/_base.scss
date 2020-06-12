@@ -34,12 +34,6 @@ body {
     min-height: 100%;
     @include clearfix();
     -webkit-font-smoothing: antialiased; // Fix for webkit rendering
-    // Ala Trent Walton (http://trentwalton.com/2011/09/07/css-hyphenation):
-    -webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	-ms-hyphens: auto;
-	-o-hyphens: auto;
-	hyphens: auto;
     word-wrap: break-word;
     @media (max-width: 550px){
         font-size: 15px;
